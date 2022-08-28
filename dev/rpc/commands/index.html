@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://arduino.github.io/arduino-cli/dev/rpc/commands/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.3.6">
     
     
       
@@ -146,7 +146,7 @@
     
       <div class="md-header__source">
         
-<a href="https://github.com/arduino/arduino-cli/" title="Go to repository" class="md-source" data-md-component="source">
+<a href="https://github.com/arduino/arduino-cli" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -191,7 +191,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/arduino/arduino-cli/" title="Go to repository" class="md-source" data-md-component="source">
+<a href="https://github.com/arduino/arduino-cli" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -1491,6 +1491,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#installedplatformreference" class="md-nav__link">
+    InstalledPlatformReference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#instance" class="md-nav__link">
     Instance
   </a>
@@ -1505,8 +1512,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#platformreference" class="md-nav__link">
-    PlatformReference
+  <a href="#profile" class="md-nav__link">
+    Profile
   </a>
   
 </li>
@@ -1852,6 +1859,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#libraryupgraderequest" class="md-nav__link">
+    LibraryUpgradeRequest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#libraryupgraderesponse" class="md-nav__link">
+    LibraryUpgradeResponse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#searchedlibrary" class="md-nav__link">
     SearchedLibrary
   </a>
@@ -2134,20 +2155,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../monitor/" class="md-nav__link">
-        monitor
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../settings/" class="md-nav__link">
         settings
       </a>
@@ -2244,6 +2251,21 @@
   
   
     <li class="md-nav__item">
+      <a href="../../sketch-project-file/" class="md-nav__link">
+        Sketch project file
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../library-specification/" class="md-nav__link">
         Library specification
       </a>
@@ -2307,6 +2329,54 @@
       <a href="../../package_index_json-specification/" class="md-nav__link">
         Package index specification
       </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20" type="checkbox" id="__nav_20" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_20">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_20">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/secure-boot/" class="md-nav__link">
+        Secure boot
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2744,6 +2814,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#installedplatformreference" class="md-nav__link">
+    InstalledPlatformReference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#instance" class="md-nav__link">
     Instance
   </a>
@@ -2758,8 +2835,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#platformreference" class="md-nav__link">
-    PlatformReference
+  <a href="#profile" class="md-nav__link">
+    Profile
   </a>
   
 </li>
@@ -3100,6 +3177,20 @@
           <li class="md-nav__item">
   <a href="#libraryupgradeallresponse" class="md-nav__link">
     LibraryUpgradeAllResponse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#libraryupgraderequest" class="md-nav__link">
+    LibraryUpgradeRequest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#libraryupgraderesponse" class="md-nav__link">
+    LibraryUpgradeResponse
   </a>
   
 </li>
@@ -3457,9 +3548,10 @@
 <li><a href="#cc/arduino/cli/commands/v1/common.proto">cc/arduino/cli/commands/v1/common.proto</a><ul>
 <li><a href="#cc.arduino.cli.commands.v1.Board">Board</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.DownloadProgress">DownloadProgress</a></li>
+<li><a href="#cc.arduino.cli.commands.v1.InstalledPlatformReference">InstalledPlatformReference</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.Instance">Instance</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.Platform">Platform</a></li>
-<li><a href="#cc.arduino.cli.commands.v1.PlatformReference">PlatformReference</a></li>
+<li><a href="#cc.arduino.cli.commands.v1.Profile">Profile</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.Programmer">Programmer</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.TaskProgress">TaskProgress</a></li>
 </ul>
@@ -3514,6 +3606,8 @@
 <li><a href="#cc.arduino.cli.commands.v1.LibraryUninstallResponse">LibraryUninstallResponse</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.LibraryUpgradeAllRequest">LibraryUpgradeAllRequest</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.LibraryUpgradeAllResponse">LibraryUpgradeAllResponse</a></li>
+<li><a href="#cc.arduino.cli.commands.v1.LibraryUpgradeRequest">LibraryUpgradeRequest</a></li>
+<li><a href="#cc.arduino.cli.commands.v1.LibraryUpgradeResponse">LibraryUpgradeResponse</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.SearchedLibrary">SearchedLibrary</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.SearchedLibrary.ReleasesEntry">SearchedLibrary.ReleasesEntry</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.ZipLibraryInstallRequest">ZipLibraryInstallRequest</a></li>
@@ -4438,6 +4532,18 @@
 <td></td>
 <td>An Arduino Core instance.</td>
 </tr>
+<tr>
+<td>profile</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>Profile to use</td>
+</tr>
+<tr>
+<td>sketch_path</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>The path where the sketch is stored</td>
+</tr>
 </tbody>
 </table>
 <p><a name="cc.arduino.cli.commands.v1.InitResponse"></a></p>
@@ -4463,6 +4569,12 @@
 <td><a href="#google.rpc.Status">google.rpc.Status</a></td>
 <td></td>
 <td></td>
+</tr>
+<tr>
+<td>profile</td>
+<td><a href="#cc.arduino.cli.commands.v1.Profile">Profile</a></td>
+<td></td>
+<td>Selected profile information</td>
 </tr>
 </tbody>
 </table>
@@ -5061,6 +5173,12 @@
 <td>Download and install an Arduino library from the libraries index.</td>
 </tr>
 <tr>
+<td>LibraryUpgrade</td>
+<td><a href="#cc.arduino.cli.commands.v1.LibraryUpgradeRequest">LibraryUpgradeRequest</a></td>
+<td><a href="#cc.arduino.cli.commands.v1.LibraryUpgradeResponse">LibraryUpgradeResponse</a> stream</td>
+<td>Upgrade a library to the newest version available.</td>
+</tr>
+<tr>
 <td>ZipLibraryInstall</td>
 <td><a href="#cc.arduino.cli.commands.v1.ZipLibraryInstallRequest">ZipLibraryInstallRequest</a></td>
 <td><a href="#cc.arduino.cli.commands.v1.ZipLibraryInstallResponse">ZipLibraryInstallResponse</a> stream</td>
@@ -5190,6 +5308,44 @@
 </tr>
 </tbody>
 </table>
+<p><a name="cc.arduino.cli.commands.v1.InstalledPlatformReference"></a></p>
+<h3 id="installedplatformreference">InstalledPlatformReference<a class="headerlink" href="#installedplatformreference" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>Platform ID (e.g., <code>arduino:avr</code>).</td>
+</tr>
+<tr>
+<td>version</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>Version of the platform.</td>
+</tr>
+<tr>
+<td>install_dir</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>Installation directory of the platform</td>
+</tr>
+<tr>
+<td>package_url</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>3rd party platform URL</td>
+</tr>
+</tbody>
+</table>
 <p><a name="cc.arduino.cli.commands.v1.Instance"></a></p>
 <h3 id="instance">Instance<a class="headerlink" href="#instance" title="Permanent link">&para;</a></h3>
 <table>
@@ -5284,8 +5440,8 @@
 </tr>
 </tbody>
 </table>
-<p><a name="cc.arduino.cli.commands.v1.PlatformReference"></a></p>
-<h3 id="platformreference">PlatformReference<a class="headerlink" href="#platformreference" title="Permanent link">&para;</a></h3>
+<p><a name="cc.arduino.cli.commands.v1.Profile"></a></p>
+<h3 id="profile">Profile<a class="headerlink" href="#profile" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -5297,16 +5453,16 @@
 </thead>
 <tbody>
 <tr>
-<td>id</td>
+<td>name</td>
 <td><a href="#string">string</a></td>
 <td></td>
-<td>Platform ID (e.g., <code>arduino:avr</code>).</td>
+<td>Name used to identify the profile within the sketch.</td>
 </tr>
 <tr>
-<td>version</td>
+<td>fqbn</td>
 <td><a href="#string">string</a></td>
 <td></td>
-<td>Version of the platform.</td>
+<td>FQBN specified in the profile.</td>
 </tr>
 </tbody>
 </table>
@@ -5478,7 +5634,7 @@
 <td>libraries</td>
 <td><a href="#string">string</a></td>
 <td>repeated</td>
-<td>List of custom libraries dir paths.</td>
+<td>A list of paths to directories containing a collection of libraries.</td>
 </tr>
 <tr>
 <td>optimize_for_debug</td>
@@ -5520,7 +5676,7 @@
 <td>library</td>
 <td><a href="#string">string</a></td>
 <td>repeated</td>
-<td>List of paths to library root folders</td>
+<td>A list of paths to single libraries root directory.</td>
 </tr>
 <tr>
 <td>keys_keychain</td>
@@ -5539,6 +5695,12 @@
 <td><a href="#string">string</a></td>
 <td></td>
 <td>The name of the custom key to use for encrypting during the compile process</td>
+</tr>
+<tr>
+<td>skip_libraries_discovery</td>
+<td><a href="#bool">bool</a></td>
+<td></td>
+<td>If set to true the build will skip the library discovery process and will use the same libraries of latest build. Enabling this flag may produce a wrong output and should not be used in regular compiles unless there is a very specific reason to do so. This flag is mainly provided for usage in language servers to optimize the build speed in some particular cases.</td>
 </tr>
 </tbody>
 </table>
@@ -5612,13 +5774,13 @@
 </tr>
 <tr>
 <td>board_platform</td>
-<td><a href="#cc.arduino.cli.commands.v1.PlatformReference">PlatformReference</a></td>
+<td><a href="#cc.arduino.cli.commands.v1.InstalledPlatformReference">InstalledPlatformReference</a></td>
 <td></td>
 <td>The platform where the board is defined</td>
 </tr>
 <tr>
 <td>build_platform</td>
-<td><a href="#cc.arduino.cli.commands.v1.PlatformReference">PlatformReference</a></td>
+<td><a href="#cc.arduino.cli.commands.v1.InstalledPlatformReference">InstalledPlatformReference</a></td>
 <td></td>
 <td>The platform used for the build (if referenced from the board platform)</td>
 </tr>
@@ -5768,6 +5930,12 @@
 <td><a href="#bool">bool</a></td>
 <td></td>
 <td>Set to true to not run (eventual) post install scripts for trusted platforms</td>
+</tr>
+<tr>
+<td>no_overwrite</td>
+<td><a href="#bool">bool</a></td>
+<td></td>
+<td>Set to true to skip installation if a different version of the platform is already installed.</td>
 </tr>
 </tbody>
 </table>
@@ -6511,6 +6679,12 @@
 <td></td>
 <td>Set to true to skip installation of specified library&#39;s dependencies, defaults to false.</td>
 </tr>
+<tr>
+<td>no_overwrite</td>
+<td><a href="#bool">bool</a></td>
+<td></td>
+<td>Set to true to skip installation if a different version of the library or one of its dependencies is already installed, defaults to false.</td>
+</tr>
 </tbody>
 </table>
 <p><a name="cc.arduino.cli.commands.v1.LibraryInstallResponse"></a></p>
@@ -6894,6 +7068,64 @@
 <td><a href="#cc.arduino.cli.commands.v1.TaskProgress">TaskProgress</a></td>
 <td></td>
 <td>Description of the current stage of the upgrade.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="cc.arduino.cli.commands.v1.LibraryUpgradeRequest"></a></p>
+<h3 id="libraryupgraderequest">LibraryUpgradeRequest<a class="headerlink" href="#libraryupgraderequest" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>instance</td>
+<td><a href="#cc.arduino.cli.commands.v1.Instance">Instance</a></td>
+<td></td>
+<td>Arduino Core Service instance from the <code>Init</code> response.</td>
+</tr>
+<tr>
+<td>name</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>Name of the library.</td>
+</tr>
+<tr>
+<td>no_deps</td>
+<td><a href="#bool">bool</a></td>
+<td></td>
+<td>Set to true to skip installation of specified library&#39;s dependencies, defaults to false.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="cc.arduino.cli.commands.v1.LibraryUpgradeResponse"></a></p>
+<h3 id="libraryupgraderesponse">LibraryUpgradeResponse<a class="headerlink" href="#libraryupgraderesponse" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>progress</td>
+<td><a href="#cc.arduino.cli.commands.v1.DownloadProgress">DownloadProgress</a></td>
+<td></td>
+<td>Progress of the library download.</td>
+</tr>
+<tr>
+<td>task_progress</td>
+<td><a href="#cc.arduino.cli.commands.v1.TaskProgress">TaskProgress</a></td>
+<td></td>
+<td>Description of the current stage of the installation.</td>
 </tr>
 </tbody>
 </table>
@@ -7311,6 +7543,12 @@
 <td>repeated</td>
 <td>Settings applied to the port, may be returned after a port is opened (to report the default settings) or after a new port_configuration is sent (to report the new settings applied)</td>
 </tr>
+<tr>
+<td>success</td>
+<td><a href="#bool">bool</a></td>
+<td></td>
+<td>A message with this field set to true is sent as soon as the port is succesfully opened</td>
+</tr>
 </tbody>
 </table>
 <p><a name="cc/arduino/cli/commands/v1/port.proto"></a></p>
@@ -7583,12 +7821,6 @@
 <td><a href="#string">string</a></td>
 <td></td>
 <td>Protocol that will be used to upload, this information is necessary to pick the right upload tool for the board specified with the FQBN.</td>
-</tr>
-<tr>
-<td>address</td>
-<td><a href="#string">string</a></td>
-<td></td>
-<td>If an FQBN is not provided but both protocol and address are we can try and detect the FQBN using this information.</td>
 </tr>
 </tbody>
 </table>
@@ -8132,13 +8364,13 @@
       
       
         
-        <a href="../monitor/" class="md-footer__link md-footer__link--next" aria-label="Next: monitor" rel="next">
+        <a href="../settings/" class="md-footer__link md-footer__link--next" aria-label="Next: settings" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              monitor
+              settings
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -8173,7 +8405,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>

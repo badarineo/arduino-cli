@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://arduino.github.io/arduino-cli/dev/integration-options/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.3.6">
     
     
       
@@ -146,7 +146,7 @@
     
       <div class="md-header__source">
         
-<a href="https://github.com/arduino/arduino-cli/" title="Go to repository" class="md-source" data-md-component="source">
+<a href="https://github.com/arduino/arduino-cli" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -191,7 +191,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/arduino/arduino-cli/" title="Go to repository" class="md-source" data-md-component="source">
+<a href="https://github.com/arduino/arduino-cli" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -1063,20 +1063,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../rpc/monitor/" class="md-nav__link">
-        monitor
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../rpc/settings/" class="md-nav__link">
         settings
       </a>
@@ -1256,6 +1242,21 @@
   
   
     <li class="md-nav__item">
+      <a href="../sketch-project-file/" class="md-nav__link">
+        Sketch project file
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../library-specification/" class="md-nav__link">
         Library specification
       </a>
@@ -1319,6 +1320,54 @@
       <a href="../package_index_json-specification/" class="md-nav__link">
         Package index specification
       </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20" type="checkbox" id="__nav_20" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_20">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_20">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/secure-boot/" class="md-nav__link">
+        Secure boot
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1416,10 +1465,10 @@
                 
                 
                 <h1 id="the-three-pillars-of-the-arduino-cli">The three pillars of the Arduino CLI<a class="headerlink" href="#the-three-pillars-of-the-arduino-cli" title="Permanent link">&para;</a></h1>
-<p>The Arduino CLI is an open source Command Line Application written in <a href="https://golang.org/">Golang</a> that can be used from a terminal to
+<p>The Arduino CLI is an open source Command Line Application written in <a href="https://go.dev/">Golang</a> that can be used from a terminal to
 compile, verify and upload sketches to Arduino boards and that’s capable of managing all the software and tools needed
 in the process. But don’t get fooled by its name: Arduino CLI can do much more than the average console application, as
-shown by the <a href="https://www.arduino.cc/pro/arduino-pro-ide">Arduino Pro IDE</a> and <a href="https://create.arduino.cc">Arduino Cloud</a>, which rely on it for similar purposes but each one in a completely
+shown by the <a href="https://www.arduino.cc/pro/arduino-pro-ide">Arduino Pro IDE</a> and <a href="https://cloud.arduino.cc/home">Arduino Cloud</a>, which rely on it for similar purposes but each one in a completely
 different way from the other. In this article we introduce the three pillars of the Arduino CLI, explaining how we
 designed the software so that it can be effectively leveraged under different scenarios.</p>
 <h2 id="the-first-pillar-command-line-interface">The first pillar: command line interface<a class="headerlink" href="#the-first-pillar-command-line-interface" title="Permanent link">&para;</a></h2>
@@ -1452,7 +1501,7 @@ HTTP client like curl or wget and a shell like bash.</p>
 <p><a href="https://grpc.io/">gRPC</a> is a high performance <a href="https://en.wikipedia.org/wiki/Remote_procedure_call">RPC</a> framework that can efficiently connect client and server applications. The Arduino
 CLI can act as a gRPC server (we call it <a href="../commands/arduino-cli_daemon/">daemon mode</a>), exposing a set of procedures that implement the very same set
 of features of the command line interface and waiting for clients to connect and use them. To give an idea, the
-following is some <a href="https://golang.org/">Golang</a> code capable of retrieving the version number of a remote running Arduino CLI server
+following is some <a href="https://go.dev/">Golang</a> code capable of retrieving the version number of a remote running Arduino CLI server
 instance:</p>
 <p><img alt="gRPC interface screenshot" src="../img/CLI_gRPC_interface_screenshot.png" /></p>
 <p>gRPC is language agnostic: even if the example is written in Golang, the programming language used for the client can be
@@ -1463,12 +1512,12 @@ Arduino board and it demands all these features of an Arduino CLI instance. Conv
 know that the client that’s connected is the Pro IDE, and neither does it care.</p>
 <p>For more information on Arduino CLI's gRPC interface, see the <a href="../rpc/commands/">gRPC interface reference</a>.</p>
 <h2 id="the-third-pillar-embedding">The third pillar: embedding<a class="headerlink" href="#the-third-pillar-embedding" title="Permanent link">&para;</a></h2>
-<p>Arduino CLI is written in <a href="https://golang.org/">Golang</a> and the code is organized in a way that makes it easy to use it as a library by
+<p>Arduino CLI is written in <a href="https://go.dev/">Golang</a> and the code is organized in a way that makes it easy to use it as a library by
 including the modules you need in another Golang application at compile time. Both the first and second pillars rely on
 a common Golang API, a set of functions that abstract all the functionalities offered by the Arduino CLI, so that when
 we provide a fix or a new feature, they are automatically available to both the command line and gRPC interfaces. The
 source modules implementing this API can be imported in other Golang programs to embed a full-fledged Arduino CLI. For
-example, this is how some backend services powering <a href="https://create.arduino.cc">Arduino Cloud</a> can compile sketches and manage libraries. Just to
+example, this is how some backend services powering <a href="https://cloud.arduino.cc/home">Arduino Cloud</a> can compile sketches and manage libraries. Just to
 give you a taste of what it means to embed the Arduino CLI, here is how to search for a core using the API:</p>
 <p><img alt="Go library interface screenshot" src="../img/CLI_Go_library_interface_screenshot.png" /></p>
 <p>Embedding the Arduino CLI is limited to Golang applications and requires a deep knowledge of its internals. For the
@@ -1555,7 +1604,7 @@ tracker</a> if you’ve got a use case that doesn’t fit one of the three pilla
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.b1047164.min.js"></script>

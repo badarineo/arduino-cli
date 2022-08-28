@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://arduino.github.io/arduino-cli/dev/UPGRADING/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.3.6">
     
     
       
@@ -146,7 +146,7 @@
     
       <div class="md-header__source">
         
-<a href="https://github.com/arduino/arduino-cli/" title="Go to repository" class="md-source" data-md-component="source">
+<a href="https://github.com/arduino/arduino-cli" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -191,7 +191,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/arduino/arduino-cli/" title="Go to repository" class="md-source" data-md-component="source">
+<a href="https://github.com/arduino/arduino-cli" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -277,12 +277,217 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#0270" class="md-nav__link">
+    0.27.0
+  </a>
+  
+    <nav class="md-nav" aria-label="0.27.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes-in-golang-api-githubcomarduinoarduino-cliarduinocorespackagemanagerpackagemanager" class="md-nav__link">
+    Breaking changes in golang API github.com/arduino/arduino-cli/arduino/cores/packagemanager.PackageManager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some-grpc-mapped-methods-now-accepts-the-grpc-request-instead-of-the-instance-id-as-parameter" class="md-nav__link">
+    Some gRPC-mapped methods now accepts the gRPC request instead of the instance ID as parameter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0260" class="md-nav__link">
+    0.26.0
+  </a>
+  
+    <nav class="md-nav" aria-label="0.26.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#githubcomarduinoarduino-clicommandsdownloadtoolrelease-and-installtoolrelease-functions-have-been-removed" class="md-nav__link">
+    github.com/arduino/arduino-cli/commands.DownloadToolRelease, and InstallToolRelease functions have been removed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#githubcomarduinoarduino-clicommandsoutdated-and-upgrade-functions-have-been-moved" class="md-nav__link">
+    github.com/arduino/arduino-cli/commands.Outdated and Upgrade functions have been moved
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#githubcomarduino-cliarduinocorespackagemanagerpackagemanager-methods-and-fields-change" class="md-nav__link">
+    github.com/arduino-cli/arduino/cores/packagemanager.PackageManager methods and fields change
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0250" class="md-nav__link">
+    0.25.0
+  </a>
+  
+    <nav class="md-nav" aria-label="0.25.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#go-lang-function-githubcomarduinoarduino-cliarduinoutilsfeedstreamto-has-been-changed" class="md-nav__link">
+    go-lang function github.com/arduino/arduino-cli/arduino/utils.FeedStreamTo has been changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0240" class="md-nav__link">
+    0.24.0
+  </a>
+  
+    <nav class="md-nav" aria-label="0.24.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grpc-monitor-service-and-related-grpc-calls-have-been-removed" class="md-nav__link">
+    gRPC Monitor service and related gRPC calls have been removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0230" class="md-nav__link">
+    0.23.0
+  </a>
+  
+    <nav class="md-nav" aria-label="0.23.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arduino-ide-builtin-libraries-are-now-excluded-from-the-build-when-running-arduino-cli-standalone" class="md-nav__link">
+    Arduino IDE builtin libraries are now excluded from the build when running arduino-cli standalone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpc-changes-in-message-ccarduinoclicommandsv1platformreference" class="md-nav__link">
+    gRPC: Changes in message cc.arduino.cli.commands.v1.PlatformReference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#golang-api-githubcomarduinoarduino-clicliglobalsdefaultindexurl-has-been-moved-under-githubcomarduinoarduino-cliarduinoglobals" class="md-nav__link">
+    golang API: github.com/arduino/arduino-cli/cli/globals.DefaultIndexURL has been moved under github.com/arduino/arduino-cli/arduino/globals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#golang-api-packagemanagerdownloadplatformrelease-no-longer-need-label-parameter" class="md-nav__link">
+    golang API: PackageManager.DownloadPlatformRelease no longer need label parameter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#0220" class="md-nav__link">
     0.22.0
   </a>
   
     <nav class="md-nav" aria-label="0.22.0">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#githubcomarduinoarduino-cliarduinomultipleboardsdetectederror-field-changed-type" class="md-nav__link">
+    github.com/arduino/arduino-cli/arduino.MultipleBoardsDetectedError field changed type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-githubcomarduinoarduino-clicommandsuploaddetectconnectedboard-has-been-removed" class="md-nav__link">
+    Function github.com/arduino/arduino-cli/commands/upload.DetectConnectedBoard(...) has been removed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-argumentsgetdiscoveryport-has-been-removed" class="md-nav__link">
+    Function arguments.GetDiscoveryPort(...) has been removed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpc-address-parameter-has-been-removed-from-commandssupporteduserfieldsrequest" class="md-nav__link">
+    gRPC: address parameter has been removed from commands.SupportedUserFieldsRequest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-content-of-package-githubcomarduinoarduino-clihttpclient-has-been-moved-to-a-different-path" class="md-nav__link">
+    The content of package github.com/arduino/arduino-cli/httpclient has been moved to a different path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commandsdownloadprogresscb-and-commandstaskprogresscb-have-been-moved-to-package-githubcomarduinoarduino-clirpcccarduinoclicommandsv1" class="md-nav__link">
+    commands.DownloadProgressCB and commands.TaskProgressCB have been moved to package github.com/arduino/arduino-cli/rpc/cc/arduino/cli/commands/v1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commandsgetdownloaderconfig-has-been-moved-to-package-githubcomarduinoarduino-cliarduinohttpclient" class="md-nav__link">
+    commands.GetDownloaderConfig has been moved to package github.com/arduino/arduino-cli/arduino/httpclient
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commandsdownload-has-been-removed-and-replaced-by-githubcomarduinoarduino-cliarduinohttpclientdownloadfile" class="md-nav__link">
+    commands.Download has been removed and replaced by github.com/arduino/arduino-cli/arduino/httpclient.DownloadFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packagemanagerpackagemanagerdownloadtoolrelease-packagemanagerpackagemanagerdownloadplatformrelease-and-resourcesdownloadresourcedownload-functions-change-signature-and-behaviour" class="md-nav__link">
+    packagemanager.PackageManager.DownloadToolRelease, packagemanager.PackageManager.DownloadPlatformRelease, and resources.DownloadResource.Download functions change signature and behaviour
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#packagemanagerload-functions-now-returns-error-instead-of-statusstatus" class="md-nav__link">
@@ -1467,20 +1672,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../rpc/monitor/" class="md-nav__link">
-        monitor
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../rpc/settings/" class="md-nav__link">
         settings
       </a>
@@ -1577,6 +1768,21 @@
   
   
     <li class="md-nav__item">
+      <a href="../sketch-project-file/" class="md-nav__link">
+        Sketch project file
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../library-specification/" class="md-nav__link">
         Library specification
       </a>
@@ -1644,6 +1850,54 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20" type="checkbox" id="__nav_20" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_20">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_20">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/secure-boot/" class="md-nav__link">
+        Secure boot
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1672,12 +1926,217 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#0270" class="md-nav__link">
+    0.27.0
+  </a>
+  
+    <nav class="md-nav" aria-label="0.27.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes-in-golang-api-githubcomarduinoarduino-cliarduinocorespackagemanagerpackagemanager" class="md-nav__link">
+    Breaking changes in golang API github.com/arduino/arduino-cli/arduino/cores/packagemanager.PackageManager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some-grpc-mapped-methods-now-accepts-the-grpc-request-instead-of-the-instance-id-as-parameter" class="md-nav__link">
+    Some gRPC-mapped methods now accepts the gRPC request instead of the instance ID as parameter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0260" class="md-nav__link">
+    0.26.0
+  </a>
+  
+    <nav class="md-nav" aria-label="0.26.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#githubcomarduinoarduino-clicommandsdownloadtoolrelease-and-installtoolrelease-functions-have-been-removed" class="md-nav__link">
+    github.com/arduino/arduino-cli/commands.DownloadToolRelease, and InstallToolRelease functions have been removed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#githubcomarduinoarduino-clicommandsoutdated-and-upgrade-functions-have-been-moved" class="md-nav__link">
+    github.com/arduino/arduino-cli/commands.Outdated and Upgrade functions have been moved
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#githubcomarduino-cliarduinocorespackagemanagerpackagemanager-methods-and-fields-change" class="md-nav__link">
+    github.com/arduino-cli/arduino/cores/packagemanager.PackageManager methods and fields change
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0250" class="md-nav__link">
+    0.25.0
+  </a>
+  
+    <nav class="md-nav" aria-label="0.25.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#go-lang-function-githubcomarduinoarduino-cliarduinoutilsfeedstreamto-has-been-changed" class="md-nav__link">
+    go-lang function github.com/arduino/arduino-cli/arduino/utils.FeedStreamTo has been changed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0240" class="md-nav__link">
+    0.24.0
+  </a>
+  
+    <nav class="md-nav" aria-label="0.24.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grpc-monitor-service-and-related-grpc-calls-have-been-removed" class="md-nav__link">
+    gRPC Monitor service and related gRPC calls have been removed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0230" class="md-nav__link">
+    0.23.0
+  </a>
+  
+    <nav class="md-nav" aria-label="0.23.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arduino-ide-builtin-libraries-are-now-excluded-from-the-build-when-running-arduino-cli-standalone" class="md-nav__link">
+    Arduino IDE builtin libraries are now excluded from the build when running arduino-cli standalone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpc-changes-in-message-ccarduinoclicommandsv1platformreference" class="md-nav__link">
+    gRPC: Changes in message cc.arduino.cli.commands.v1.PlatformReference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#golang-api-githubcomarduinoarduino-clicliglobalsdefaultindexurl-has-been-moved-under-githubcomarduinoarduino-cliarduinoglobals" class="md-nav__link">
+    golang API: github.com/arduino/arduino-cli/cli/globals.DefaultIndexURL has been moved under github.com/arduino/arduino-cli/arduino/globals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#golang-api-packagemanagerdownloadplatformrelease-no-longer-need-label-parameter" class="md-nav__link">
+    golang API: PackageManager.DownloadPlatformRelease no longer need label parameter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#0220" class="md-nav__link">
     0.22.0
   </a>
   
     <nav class="md-nav" aria-label="0.22.0">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#githubcomarduinoarduino-cliarduinomultipleboardsdetectederror-field-changed-type" class="md-nav__link">
+    github.com/arduino/arduino-cli/arduino.MultipleBoardsDetectedError field changed type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-githubcomarduinoarduino-clicommandsuploaddetectconnectedboard-has-been-removed" class="md-nav__link">
+    Function github.com/arduino/arduino-cli/commands/upload.DetectConnectedBoard(...) has been removed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-argumentsgetdiscoveryport-has-been-removed" class="md-nav__link">
+    Function arguments.GetDiscoveryPort(...) has been removed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grpc-address-parameter-has-been-removed-from-commandssupporteduserfieldsrequest" class="md-nav__link">
+    gRPC: address parameter has been removed from commands.SupportedUserFieldsRequest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-content-of-package-githubcomarduinoarduino-clihttpclient-has-been-moved-to-a-different-path" class="md-nav__link">
+    The content of package github.com/arduino/arduino-cli/httpclient has been moved to a different path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commandsdownloadprogresscb-and-commandstaskprogresscb-have-been-moved-to-package-githubcomarduinoarduino-clirpcccarduinoclicommandsv1" class="md-nav__link">
+    commands.DownloadProgressCB and commands.TaskProgressCB have been moved to package github.com/arduino/arduino-cli/rpc/cc/arduino/cli/commands/v1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commandsgetdownloaderconfig-has-been-moved-to-package-githubcomarduinoarduino-cliarduinohttpclient" class="md-nav__link">
+    commands.GetDownloaderConfig has been moved to package github.com/arduino/arduino-cli/arduino/httpclient
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commandsdownload-has-been-removed-and-replaced-by-githubcomarduinoarduino-cliarduinohttpclientdownloadfile" class="md-nav__link">
+    commands.Download has been removed and replaced by github.com/arduino/arduino-cli/arduino/httpclient.DownloadFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packagemanagerpackagemanagerdownloadtoolrelease-packagemanagerpackagemanagerdownloadplatformrelease-and-resourcesdownloadresourcedownload-functions-change-signature-and-behaviour" class="md-nav__link">
+    packagemanager.PackageManager.DownloadToolRelease, packagemanager.PackageManager.DownloadPlatformRelease, and resources.DownloadResource.Download functions change signature and behaviour
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#packagemanagerload-functions-now-returns-error-instead-of-statusstatus" class="md-nav__link">
@@ -2059,51 +2518,418 @@
                 
                 <h1 id="upgrading">Upgrading<a class="headerlink" href="#upgrading" title="Permanent link">&para;</a></h1>
 <p>Here you can find a list of migration guides to handle breaking changes between releases of the CLI.</p>
-<h2 id="0220">0.22.0<a class="headerlink" href="#0220" title="Permanent link">&para;</a></h2>
-<h3 id="packagemanagerload-functions-now-returns-error-instead-of-statusstatus"><code>packagemanager.Load*</code> functions now returns <code>error</code> instead of <code>*status.Status</code><a class="headerlink" href="#packagemanagerload-functions-now-returns-error-instead-of-statusstatus" title="Permanent link">&para;</a></h3>
-<p>The following functions signature:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="p">(</span><span class="nx">pm</span> <span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span> <span class="nx">LoadHardware</span><span class="p">()</span> <span class="p">[]</span><span class="o">*</span><span class="nx">status</span><span class="p">.</span><span class="nx">Status</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="kd">func</span> <span class="p">(</span><span class="nx">pm</span> <span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span> <span class="nx">LoadHardwareFromDirectories</span><span class="p">(</span><span class="nx">hardwarePaths</span> <span class="nx">paths</span><span class="p">.</span><span class="nx">PathList</span><span class="p">)</span> <span class="p">[]</span><span class="o">*</span><span class="nx">status</span><span class="p">.</span><span class="nx">Status</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="kd">func</span> <span class="p">(</span><span class="nx">pm</span> <span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span> <span class="nx">LoadHardwareFromDirectory</span><span class="p">(</span><span class="nx">path</span> <span class="o">*</span><span class="nx">paths</span><span class="p">.</span><span class="nx">Path</span><span class="p">)</span> <span class="p">[]</span><span class="o">*</span><span class="nx">status</span><span class="p">.</span><span class="nx">Status</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="kd">func</span> <span class="p">(</span><span class="nx">pm</span> <span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span> <span class="nx">LoadToolsFromBundleDirectories</span><span class="p">(</span><span class="nx">dirs</span> <span class="nx">paths</span><span class="p">.</span><span class="nx">PathList</span><span class="p">)</span> <span class="p">[]</span><span class="o">*</span><span class="nx">status</span><span class="p">.</span><span class="nx">Status</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="kd">func</span> <span class="p">(</span><span class="nx">pm</span> <span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span> <span class="nx">LoadDiscoveries</span><span class="p">()</span> <span class="p">[]</span><span class="o">*</span><span class="nx">status</span><span class="p">.</span><span class="nx">Status</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<h2 id="0270">0.27.0<a class="headerlink" href="#0270" title="Permanent link">&para;</a></h2>
+<h3 id="breaking-changes-in-golang-api-githubcomarduinoarduino-cliarduinocorespackagemanagerpackagemanager">Breaking changes in golang API <code>github.com/arduino/arduino-cli/arduino/cores/packagemanager.PackageManager</code><a class="headerlink" href="#breaking-changes-in-golang-api-githubcomarduinoarduino-cliarduinocorespackagemanagerpackagemanager" title="Permanent link">&para;</a></h3>
+<p>The <code>PackageManager</code> API has been heavily refactored to correctly handle multitasking and concurrency. Many fields in
+the PackageManager object are now private. All the <code>PackageManager</code> methods have been moved into other objects. In
+particular:</p>
+<ul>
+<li>the methods that query the <code>PackageManager</code> without changing its internal state, have been moved into the new
+  <code>Explorer</code> object</li>
+<li>the methods that change the <code>PackageManager</code> internal state, have been moved into the new <code>Builder</code> object.</li>
+</ul>
+<p>The <code>Builder</code> object must be used to create a new <code>PackageManager</code>. Previously the function <code>NewPackageManager</code> was used
+to get a clean <code>PackageManager</code> object and then use the <code>LoadHardware*</code> methods to build it. Now the function
+<code>NewBuilder</code> must be used to create a <code>Builder</code>, run the <code>LoadHardware*</code> methods to load platforms, and finally call the
+<code>Builder.Build()</code> method to obtain the final <code>PackageManager</code>.</p>
+<p>Previously we did:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">pm</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">NewPackageManager</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadHardware</span><span class="p">()</span><span class="w"></span>
+<span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadHardwareFromDirectories</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadHardwareFromDirectory</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadToolsFromPackageDir</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadToolsFromBundleDirectories</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadToolsFromBundleDirectory</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="nx">pack</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">GetOrCreatePackage</span><span class="p">(</span><span class="s">&quot;packagername&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="c1">// ...use `pack` to tweak or load more hardware...</span><span class="w"></span>
+<span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadPackageIndex</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadPackageIndexFromFile</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadHardwareForProfile</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+
+<span class="c1">// ...use `pm` to implement business logic...</span><span class="w"></span>
+</code></pre></div>
+<p>Now we must do:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">PackageManager</span><span class="w"></span>
+
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">pmb</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">Newbuilder</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadHardware</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadHardwareFromDirectories</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadHardwareFromDirectory</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadToolsFromPackageDir</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadToolsFromBundleDirectories</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadToolsFromBundleDirectory</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">pack</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">GetOrCreatePackage</span><span class="p">(</span><span class="s">&quot;packagername&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// ...use `pack` to tweak or load more hardware...</span><span class="w"></span>
+<span class="w">    </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadPackageIndex</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadPackageIndexFromFile</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadHardwareForProfile</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nx">pm</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">Build</span><span class="p">()</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">// ...use `pm` to implement business logic...</span><span class="w"></span>
+</code></pre></div>
+<p>It's not mandatory but highly recommended, to drop the <code>Builder</code> object once it has built the <code>PackageManager</code> (that's
+why in the example the <code>pmb</code> builder is created in a limited scope between braces).</p>
+<p>To query the <code>PackagerManager</code> now it is required to obtain an <code>Explorer</code> object through the
+<code>PackageManager.NewExplorer()</code> method.</p>
+<p>Previously we did:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">DoStuff</span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">PackageManager</span><span class="p">,</span><span class="w"> </span><span class="o">...</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// ...implement business logic through PackageManager methods...</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">Packages</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">CustomGlobalProperties</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindPlatform</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindPlatformRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindPlatformReleaseDependencies</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">DownloadToolRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">DownloadPlatformRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">IdentifyBoard</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">DownloadAndInstallPlatformUpgrades</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">DownloadAndInstallPlatformAndTools</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">InstallPlatform</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">InstallPlatformInDirectory</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">RunPostInstallScript</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">IsManagedPlatformRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">UninstallPlatform</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">InstallTool</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">IsManagedToolRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">UninstallTool</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">IsToolRequired</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadDiscoveries</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">GetProfile</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">GetEnvVarsForSpawnedProcess</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">DiscoveryManager</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindPlatformReleaseProvidingBoardsWithVidPid</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindBoardsWithVidPid</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindBoardsWithID</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindBoardWithFQBN</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">ResolveFQBN</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">Package</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">GetInstalledPlatformRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">GetAllInstalledToolsReleases</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">InstalledPlatformReleases</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">InstalledBoards</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindToolsRequiredFromPlatformRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">GetTool</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindToolsRequiredForBoard</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindToolDependency</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindDiscoveryDependency</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">FindMonitorDependency</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Now we must obtain the <code>Explorer</code> object to access the same methods, moreover, we must call the <code>release</code> callback
+function once we complete the task:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">DoStuff</span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">PackageManager</span><span class="p">,</span><span class="w"> </span><span class="o">...</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">pme</span><span class="p">,</span><span class="w"> </span><span class="nx">release</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">NewExplorer</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="k">defer</span><span class="w"> </span><span class="nx">release</span><span class="p">()</span><span class="w"></span>
+
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">GetPackages</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">GetCustomGlobalProperties</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindPlatform</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindPlatformRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindPlatformReleaseDependencies</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">DownloadToolRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">DownloadPlatformRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">IdentifyBoard</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">DownloadAndInstallPlatformUpgrades</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">DownloadAndInstallPlatformAndTools</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">InstallPlatform</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">InstallPlatformInDirectory</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">RunPostInstallScript</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">IsManagedPlatformRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">UninstallPlatform</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">InstallTool</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">IsManagedToolRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">UninstallTool</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">IsToolRequired</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">LoadDiscoveries</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">GetProfile</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">GetEnvVarsForSpawnedProcess</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">DiscoveryManager</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindPlatformReleaseProvidingBoardsWithVidPid</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindBoardsWithVidPid</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindBoardsWithID</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindBoardWithFQBN</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">ResolveFQBN</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">Package</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">GetInstalledPlatformRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">GetAllInstalledToolsReleases</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">InstalledPlatformReleases</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">InstalledBoards</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindToolsRequiredFromPlatformRelease</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">GetTool</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindToolsRequiredForBoard</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindToolDependency</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindDiscoveryDependency</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pme</span><span class="p">.</span><span class="nx">FindMonitorDependency</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>The <code>Explorer</code> object keeps a read-lock on the underlying <code>PackageManager</code> that must be released once the task is done
+by calling the <code>release</code> callback function. This ensures that no other task will change the status of the
+<code>PackageManager</code> while the current task is in progress.</p>
+<p>The <code>PackageManager.Clean()</code> method has been removed and replaced by the methods:</p>
+<ul>
+<li><code>PackageManager.NewBuilder() (*Builder, commit func())</code></li>
+<li><code>Builder.BuildIntoExistingPackageManager(target *PackageManager)</code></li>
+</ul>
+<p>Previously, to update a <code>PackageManager</code> instance we did:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">Reload</span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">pm</span><span class="p">.</span><span class="nx">Clear</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">LoadHardware</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// ...other pm.Load* calls...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>now we have two options:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">Reload</span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Create a new builder and build a package manager</span><span class="w"></span>
+<span class="w">    </span><span class="nx">pmb</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">NewBuilder</span><span class="p">(</span><span class="o">...</span><span class="cm">/* config params */</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadHardware</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// ...other pmb.Load* calls...</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// apply the changes to the original pm</span><span class="w"></span>
+<span class="w">    </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">BuildIntoExistingPackageManager</span><span class="p">(</span><span class="nx">pm</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>in this case, we create a new <code>Builder</code> with the given config params and once the package manager is built we apply the
+changes atomically with <code>BuildIntoExistingPackageManager</code>. This procedure may be even more simplified with:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">Reload</span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Create a new builder using the same config params</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// as the original package manager</span><span class="w"></span>
+<span class="w">    </span><span class="nx">pmb</span><span class="p">,</span><span class="w"> </span><span class="nx">commit</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">NewBuilder</span><span class="p">()</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// build the new package manager</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pmb</span><span class="p">.</span><span class="nx">LoadHardware</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// ...other pmb.Load* calls...</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// apply the changes to the original pm</span><span class="w"></span>
+<span class="w">    </span><span class="nx">commit</span><span class="p">()</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>In this case, we don't even need to bother to provide the configuration parameters because they are taken from the
+previous <code>PackageManager</code> instance.</p>
+<h3 id="some-grpc-mapped-methods-now-accepts-the-grpc-request-instead-of-the-instance-id-as-parameter">Some gRPC-mapped methods now accepts the gRPC request instead of the instance ID as parameter<a class="headerlink" href="#some-grpc-mapped-methods-now-accepts-the-grpc-request-instead-of-the-instance-id-as-parameter" title="Permanent link">&para;</a></h3>
+<p>The following methods in subpackages of <code>github.com/arduino/arduino-cli/commands/*</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">Watch</span><span class="p">(</span><span class="nx">instanceID</span><span class="w"> </span><span class="kt">int32</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="o">&lt;-</span><span class="kd">chan</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">BoardListWatchResponse</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(),</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">LibraryUpgradeAll</span><span class="p">(</span><span class="nx">instanceID</span><span class="w"> </span><span class="kt">int32</span><span class="p">,</span><span class="w"> </span><span class="nx">downloadCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">,</span><span class="w"> </span><span class="nx">taskCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">TaskProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">LibraryUpgrade</span><span class="p">(</span><span class="nx">instanceID</span><span class="w"> </span><span class="kt">int32</span><span class="p">,</span><span class="w"> </span><span class="nx">libraryNames</span><span class="w"> </span><span class="p">[]</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">downloadCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">,</span><span class="w"> </span><span class="nx">taskCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">TaskProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>have been changed to:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="p">(</span><span class="nx">pm</span> <span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span> <span class="nx">LoadHardware</span><span class="p">()</span> <span class="p">[]</span><span class="kt">error</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="kd">func</span> <span class="p">(</span><span class="nx">pm</span> <span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span> <span class="nx">LoadHardwareFromDirectories</span><span class="p">(</span><span class="nx">hardwarePaths</span> <span class="nx">paths</span><span class="p">.</span><span class="nx">PathList</span><span class="p">)</span> <span class="p">[]</span><span class="kt">error</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="kd">func</span> <span class="p">(</span><span class="nx">pm</span> <span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span> <span class="nx">LoadHardwareFromDirectory</span><span class="p">(</span><span class="nx">path</span> <span class="o">*</span><span class="nx">paths</span><span class="p">.</span><span class="nx">Path</span><span class="p">)</span> <span class="p">[]</span><span class="kt">error</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="kd">func</span> <span class="p">(</span><span class="nx">pm</span> <span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span> <span class="nx">LoadToolsFromBundleDirectories</span><span class="p">(</span><span class="nx">dirs</span> <span class="nx">paths</span><span class="p">.</span><span class="nx">PathList</span><span class="p">)</span> <span class="p">[]</span><span class="kt">error</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="kd">func</span> <span class="p">(</span><span class="nx">pm</span> <span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span> <span class="nx">LoadDiscoveries</span><span class="p">()</span> <span class="p">[]</span><span class="kt">error</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">Watch</span><span class="p">(</span><span class="nx">req</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">BoardListWatchRequest</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="o">&lt;-</span><span class="kd">chan</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">BoardListWatchResponse</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(),</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">LibraryUpgradeAll</span><span class="p">(</span><span class="nx">req</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">LibraryUpgradeAllRequest</span><span class="p">,</span><span class="w"> </span><span class="nx">downloadCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">,</span><span class="w"> </span><span class="nx">taskCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">TaskProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">LibraryUpgrade</span><span class="p">(</span><span class="nx">ctx</span><span class="w"> </span><span class="nx">context</span><span class="p">.</span><span class="nx">Context</span><span class="p">,</span><span class="w"> </span><span class="nx">req</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">LibraryUpgradeRequest</span><span class="p">,</span><span class="w"> </span><span class="nx">downloadCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">,</span><span class="w"> </span><span class="nx">taskCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">TaskProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>The following methods in package <code>github.com/arduino/arduino-cli/commands</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">GetInstance</span><span class="p">(</span><span class="nx">id</span><span class="w"> </span><span class="kt">int32</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="nx">CoreInstance</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">GetPackageManager</span><span class="p">(</span><span class="nx">id</span><span class="w"> </span><span class="kt">int32</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">PackageManager</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">GetLibraryManager</span><span class="p">(</span><span class="nx">instanceID</span><span class="w"> </span><span class="kt">int32</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="nx">librariesmanager</span><span class="p">.</span><span class="nx">LibrariesManager</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>have been changed to:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">GetPackageManager</span><span class="p">(</span><span class="nx">instance</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">InstanceCommand</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">PackageManager</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// Deprecated</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">GetPackageManagerExplorer</span><span class="p">(</span><span class="nx">req</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">InstanceCommand</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nx">explorer</span><span class="w"> </span><span class="o">*</span><span class="nx">packagemanager</span><span class="p">.</span><span class="nx">Explorer</span><span class="p">,</span><span class="w"> </span><span class="nx">release</span><span class="w"> </span><span class="kd">func</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">GetLibraryManager</span><span class="p">(</span><span class="nx">req</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">InstanceCommand</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="nx">librariesmanager</span><span class="p">.</span><span class="nx">LibrariesManager</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Old code passing the <code>instanceID</code> inside the gRPC request must be changed to pass directly the whole gRPC request, for
+example:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">eventsChan</span><span class="p">,</span><span class="w"> </span><span class="nx">closeWatcher</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">board</span><span class="p">.</span><span class="nx">Watch</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">Instance</span><span class="p">.</span><span class="nx">Id</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>must be changed to:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">eventsChan</span><span class="p">,</span><span class="w"> </span><span class="nx">closeWatcher</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">board</span><span class="p">.</span><span class="nx">Watch</span><span class="p">(</span><span class="nx">req</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<h2 id="0260">0.26.0<a class="headerlink" href="#0260" title="Permanent link">&para;</a></h2>
+<h3 id="githubcomarduinoarduino-clicommandsdownloadtoolrelease-and-installtoolrelease-functions-have-been-removed"><code>github.com/arduino/arduino-cli/commands.DownloadToolRelease</code>, and <code>InstallToolRelease</code> functions have been removed<a class="headerlink" href="#githubcomarduinoarduino-clicommandsdownloadtoolrelease-and-installtoolrelease-functions-have-been-removed" title="Permanent link">&para;</a></h3>
+<p>This functionality was duplicated and already available via <code>PackageManager</code> methods.</p>
+<h3 id="githubcomarduinoarduino-clicommandsoutdated-and-upgrade-functions-have-been-moved"><code>github.com/arduino/arduino-cli/commands.Outdated</code> and <code>Upgrade</code> functions have been moved<a class="headerlink" href="#githubcomarduinoarduino-clicommandsoutdated-and-upgrade-functions-have-been-moved" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>github.com/arduino/arduino-cli/commands.Outdated</code> is now <code>github.com/arduino/arduino-cli/commands/outdated.Outdated</code></li>
+<li><code>github.com/arduino/arduino-cli/commands.Upgrade</code> is now <code>github.com/arduino/arduino-cli/commands/upgrade.Upgrade</code></li>
+</ul>
+<p>Old code must change the imports accordingly.</p>
+<h3 id="githubcomarduino-cliarduinocorespackagemanagerpackagemanager-methods-and-fields-change"><code>github.com/arduino-cli/arduino/cores/packagemanager.PackageManager</code> methods and fields change<a class="headerlink" href="#githubcomarduino-cliarduinocorespackagemanagerpackagemanager-methods-and-fields-change" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The <code>PackageManager.Log</code> and <code>TempDir</code> fields are now private.</li>
+</ul>
+<ul>
+<li>
+<p>The <code>PackageManager.DownloadToolRelease</code> method has no more the <code>label</code> parameter:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">DownloadToolRelease</span><span class="p">(</span><span class="nx">tool</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">ToolRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">progressCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</code></pre></div>
+<p>has been changed to:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">DownloadToolRelease</span><span class="p">(</span><span class="nx">tool</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">ToolRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">,</span><span class="w"> </span><span class="nx">progressCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</code></pre></div>
+<p>Old code should remove the <code>label</code> parameter.</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>The <code>PackageManager.UninstallPlatform</code>, <code>PackageManager.InstallTool</code>, and <code>PackageManager.UninstallTool</code> methods now
+  requires a <code>github.com/arduino/arduino-cli/rpc/cc/arduino/cli/commands/v1.TaskProgressCB</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">UninstallPlatform</span><span class="p">(</span><span class="nx">platformRelease</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">PlatformRelease</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">InstallTool</span><span class="p">(</span><span class="nx">toolRelease</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">ToolRelease</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">UninstallTool</span><span class="p">(</span><span class="nx">toolRelease</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">ToolRelease</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</code></pre></div>
+<p>have been changed to:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">UninstallPlatform</span><span class="p">(</span><span class="nx">platformRelease</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">PlatformRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">taskCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">TaskProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">InstallTool</span><span class="p">(</span><span class="nx">toolRelease</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">ToolRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">taskCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">TaskProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">UninstallTool</span><span class="p">(</span><span class="nx">toolRelease</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">ToolRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">taskCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">TaskProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</code></pre></div>
+<p>If you're not interested in getting the task events you can pass an empty callback function.</p>
+</li>
+</ul>
+<h2 id="0250">0.25.0<a class="headerlink" href="#0250" title="Permanent link">&para;</a></h2>
+<h3 id="go-lang-function-githubcomarduinoarduino-cliarduinoutilsfeedstreamto-has-been-changed">go-lang function <code>github.com/arduino/arduino-cli/arduino/utils.FeedStreamTo</code> has been changed<a class="headerlink" href="#go-lang-function-githubcomarduinoarduino-cliarduinoutilsfeedstreamto-has-been-changed" title="Permanent link">&para;</a></h3>
+<p>The function <code>FeedStreamTo</code> has been changed from:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">FeedStreamTo</span><span class="p">(</span><span class="nx">writer</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">[]</span><span class="kt">byte</span><span class="p">))</span><span class="w"> </span><span class="nx">io</span><span class="p">.</span><span class="nx">Writer</span><span class="w"></span>
+</code></pre></div>
+<p>to</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">FeedStreamTo</span><span class="p">(</span><span class="nx">writer</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">[]</span><span class="kt">byte</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="nx">io</span><span class="p">.</span><span class="nx">WriteCloser</span><span class="p">,</span><span class="w"> </span><span class="nx">context</span><span class="p">.</span><span class="nx">Context</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>The user must call the <code>Close</code> method on the returned <code>io.WriteClose</code> to correctly dispose the streaming channel. The
+context <code>Done()</code> method may be used to wait for the internal subroutines to complete.</p>
+<h2 id="0240">0.24.0<a class="headerlink" href="#0240" title="Permanent link">&para;</a></h2>
+<h3 id="grpc-monitor-service-and-related-grpc-calls-have-been-removed">gRPC <code>Monitor</code> service and related gRPC calls have been removed<a class="headerlink" href="#grpc-monitor-service-and-related-grpc-calls-have-been-removed" title="Permanent link">&para;</a></h3>
+<p>The gRPC <code>Monitor</code> service and the gRPC call <code>Monitor.StreamingOpen</code> have been removed in favor of the new Pluggable
+Monitor API in the gRPC <code>Commands</code> service:</p>
+<ul>
+<li><code>Commands.Monitor</code>: open a monitor connection to a communication port.</li>
+<li><code>Commands.EnumerateMonitorPortSettings</code>: enumerate the possible configurations parameters for a communication port.</li>
+</ul>
+<p>Please refer to the official documentation and the reference client implementation for details on how to use the new
+API.</p>
+<p><a href="https://arduino.github.io/arduino-cli/dev/rpc/commands/#monitorrequest">https://arduino.github.io/arduino-cli/dev/rpc/commands/#monitorrequest</a>
+<a href="https://arduino.github.io/arduino-cli/dev/rpc/commands/#monitorresponse">https://arduino.github.io/arduino-cli/dev/rpc/commands/#monitorresponse</a>
+<a href="https://arduino.github.io/arduino-cli/dev/rpc/commands/#enumeratemonitorportsettingsrequest">https://arduino.github.io/arduino-cli/dev/rpc/commands/#enumeratemonitorportsettingsrequest</a>
+<a href="https://arduino.github.io/arduino-cli/dev/rpc/commands/#enumeratemonitorportsettingsresponse">https://arduino.github.io/arduino-cli/dev/rpc/commands/#enumeratemonitorportsettingsresponse</a></p>
+<p><a href="https://github.com/arduino/arduino-cli/blob/master/commands/daemon/term_example/main.go">https://github.com/arduino/arduino-cli/blob/master/commands/daemon/term_example/main.go</a></p>
+<h2 id="0230">0.23.0<a class="headerlink" href="#0230" title="Permanent link">&para;</a></h2>
+<h3 id="arduino-ide-builtin-libraries-are-now-excluded-from-the-build-when-running-arduino-cli-standalone">Arduino IDE builtin libraries are now excluded from the build when running <code>arduino-cli</code> standalone<a class="headerlink" href="#arduino-ide-builtin-libraries-are-now-excluded-from-the-build-when-running-arduino-cli-standalone" title="Permanent link">&para;</a></h3>
+<p>Previously the "builtin libraries" in the Arduino IDE 1.8.x were always included in the build process. This wasn't the
+intended behaviour, <code>arduino-cli</code> should include them only if run as a daemon from the Arduino IDE. Now this is fixed,
+but since it has been the default behaviour from a very long time we decided to report it here as a breaking change.</p>
+<p>If a compilation fail for a missing bundled library, you can fix it just by installing the missing library from the
+library manager as usual.</p>
+<h3 id="grpc-changes-in-message-ccarduinoclicommandsv1platformreference">gRPC: Changes in message <code>cc.arduino.cli.commands.v1.PlatformReference</code><a class="headerlink" href="#grpc-changes-in-message-ccarduinoclicommandsv1platformreference" title="Permanent link">&para;</a></h3>
+<p>The gRPC message structure <code>cc.arduino.cli.commands.v1.PlatformReference</code> has been renamed to
+<code>cc.arduino.cli.commands.v1.InstalledPlatformReference</code>, and some new fields have been added:</p>
+<ul>
+<li><code>install_dir</code> is the installation directory of the platform</li>
+<li><code>package_url</code> is the 3rd party platform URL of the platform</li>
+</ul>
+<p>It is currently used only in <code>cc.arduino.cli.commands.v1.CompileResponse</code>, so the field type has been changed as well.
+Old gRPC clients must only update gRPC bindings. They can safely ignore the new fields if not needed.</p>
+<h3 id="golang-api-githubcomarduinoarduino-clicliglobalsdefaultindexurl-has-been-moved-under-githubcomarduinoarduino-cliarduinoglobals">golang API: <code>github.com/arduino/arduino-cli/cli/globals.DefaultIndexURL</code> has been moved under <code>github.com/arduino/arduino-cli/arduino/globals</code><a class="headerlink" href="#golang-api-githubcomarduinoarduino-clicliglobalsdefaultindexurl-has-been-moved-under-githubcomarduinoarduino-cliarduinoglobals" title="Permanent link">&para;</a></h3>
+<p>Legacy code should just update the import.</p>
+<h3 id="golang-api-packagemanagerdownloadplatformrelease-no-longer-need-label-parameter">golang API: PackageManager.DownloadPlatformRelease no longer need <code>label</code> parameter<a class="headerlink" href="#golang-api-packagemanagerdownloadplatformrelease-no-longer-need-label-parameter" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">DownloadPlatformRelease</span><span class="p">(</span><span class="nx">platform</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">PlatformRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">progressCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</code></pre></div>
+<p>is now:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">DownloadPlatformRelease</span><span class="p">(</span><span class="nx">platform</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">PlatformRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">,</span><span class="w"> </span><span class="nx">progressCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</code></pre></div>
+<p>Just remove the <code>label</code> parameter from legacy code.</p>
+<h2 id="0220">0.22.0<a class="headerlink" href="#0220" title="Permanent link">&para;</a></h2>
+<h3 id="githubcomarduinoarduino-cliarduinomultipleboardsdetectederror-field-changed-type"><code>github.com/arduino/arduino-cli/arduino.MultipleBoardsDetectedError</code> field changed type<a class="headerlink" href="#githubcomarduinoarduino-cliarduinomultipleboardsdetectederror-field-changed-type" title="Permanent link">&para;</a></h3>
+<p>Now the <code>Port</code> field of the error is a <code>github.com/arduino/arduino-cli/rpc/cc/arduino/cli/commands/v1.Port</code>, usually
+imported as <code>rpc.Port</code>. The old <code>discovery.Port</code> can be converted to the new one using the <code>.ToRPC()</code> method.</p>
+<h3 id="function-githubcomarduinoarduino-clicommandsuploaddetectconnectedboard-has-been-removed">Function <code>github.com/arduino/arduino-cli/commands/upload.DetectConnectedBoard(...)</code> has been removed<a class="headerlink" href="#function-githubcomarduinoarduino-clicommandsuploaddetectconnectedboard-has-been-removed" title="Permanent link">&para;</a></h3>
+<p>Use <code>github.com/arduino/arduino-cli/commands/board.List(...)</code> to detect boards.</p>
+<h3 id="function-argumentsgetdiscoveryport-has-been-removed">Function <code>arguments.GetDiscoveryPort(...)</code> has been removed<a class="headerlink" href="#function-argumentsgetdiscoveryport-has-been-removed" title="Permanent link">&para;</a></h3>
+<p>NOTE: the functions in the <code>arguments</code> package doesn't have much use outside of the <code>arduino-cli</code> so we are considering
+to remove them from the public golang API making them <code>internal</code>.</p>
+<p>The old function:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">p</span><span class="w"> </span><span class="o">*</span><span class="nx">Port</span><span class="p">)</span><span class="w"> </span><span class="nx">GetDiscoveryPort</span><span class="p">(</span><span class="nx">instance</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">Instance</span><span class="p">,</span><span class="w"> </span><span class="nx">sk</span><span class="w"> </span><span class="o">*</span><span class="nx">sketch</span><span class="p">.</span><span class="nx">Sketch</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="nx">discovery</span><span class="p">.</span><span class="nx">Port</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>is now replaced by the more powerful:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">p</span><span class="w"> </span><span class="o">*</span><span class="nx">Port</span><span class="p">)</span><span class="w"> </span><span class="nx">DetectFQBN</span><span class="p">(</span><span class="nx">inst</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">Instance</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">Port</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="kd">func</span><span class="w"> </span><span class="nx">CalculateFQBNAndPort</span><span class="p">(</span><span class="nx">portArgs</span><span class="w"> </span><span class="o">*</span><span class="nx">Port</span><span class="p">,</span><span class="w"> </span><span class="nx">fqbnArg</span><span class="w"> </span><span class="o">*</span><span class="nx">Fqbn</span><span class="p">,</span><span class="w"> </span><span class="nx">instance</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">Instance</span><span class="p">,</span><span class="w"> </span><span class="nx">sk</span><span class="w"> </span><span class="o">*</span><span class="nx">sketch</span><span class="p">.</span><span class="nx">Sketch</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">Port</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<h3 id="grpc-address-parameter-has-been-removed-from-commandssupporteduserfieldsrequest">gRPC: <code>address</code> parameter has been removed from <code>commands.SupportedUserFieldsRequest</code><a class="headerlink" href="#grpc-address-parameter-has-been-removed-from-commandssupporteduserfieldsrequest" title="Permanent link">&para;</a></h3>
+<p>The parameter is no more needed. Lagacy code will continue to work without modification (the value of the parameter will
+be just ignored).</p>
+<h3 id="the-content-of-package-githubcomarduinoarduino-clihttpclient-has-been-moved-to-a-different-path">The content of package <code>github.com/arduino/arduino-cli/httpclient</code> has been moved to a different path<a class="headerlink" href="#the-content-of-package-githubcomarduinoarduino-clihttpclient-has-been-moved-to-a-different-path" title="Permanent link">&para;</a></h3>
+<p>In particular:</p>
+<ul>
+<li><code>UserAgent</code> and <code>NetworkProxy</code> have been moved to <code>github.com/arduino/arduino-cli/configuration</code></li>
+<li>the remainder of the package <code>github.com/arduino/arduino-cli/httpclient</code> has been moved to
+  <code>github.com/arduino/arduino-cli/arduino/httpclient</code></li>
+</ul>
+<p>The old imports must be updated according to the list above.</p>
+<h3 id="commandsdownloadprogresscb-and-commandstaskprogresscb-have-been-moved-to-package-githubcomarduinoarduino-clirpcccarduinoclicommandsv1"><code>commands.DownloadProgressCB</code> and <code>commands.TaskProgressCB</code> have been moved to package <code>github.com/arduino/arduino-cli/rpc/cc/arduino/cli/commands/v1</code><a class="headerlink" href="#commandsdownloadprogresscb-and-commandstaskprogresscb-have-been-moved-to-package-githubcomarduinoarduino-clirpcccarduinoclicommandsv1" title="Permanent link">&para;</a></h3>
+<p>All references to these types must be updated with the new import.</p>
+<h3 id="commandsgetdownloaderconfig-has-been-moved-to-package-githubcomarduinoarduino-cliarduinohttpclient"><code>commands.GetDownloaderConfig</code> has been moved to package <code>github.com/arduino/arduino-cli/arduino/httpclient</code><a class="headerlink" href="#commandsgetdownloaderconfig-has-been-moved-to-package-githubcomarduinoarduino-cliarduinohttpclient" title="Permanent link">&para;</a></h3>
+<p>All references to this function must be updated with the new import.</p>
+<h3 id="commandsdownload-has-been-removed-and-replaced-by-githubcomarduinoarduino-cliarduinohttpclientdownloadfile"><code>commands.Download</code> has been removed and replaced by <code>github.com/arduino/arduino-cli/arduino/httpclient.DownloadFile</code><a class="headerlink" href="#commandsdownload-has-been-removed-and-replaced-by-githubcomarduinoarduino-cliarduinohttpclientdownloadfile" title="Permanent link">&para;</a></h3>
+<p>The old function must be replaced by the new one that is much more versatile.</p>
+<h3 id="packagemanagerpackagemanagerdownloadtoolrelease-packagemanagerpackagemanagerdownloadplatformrelease-and-resourcesdownloadresourcedownload-functions-change-signature-and-behaviour"><code>packagemanager.PackageManager.DownloadToolRelease</code>, <code>packagemanager.PackageManager.DownloadPlatformRelease</code>, and <code>resources.DownloadResource.Download</code> functions change signature and behaviour<a class="headerlink" href="#packagemanagerpackagemanagerdownloadtoolrelease-packagemanagerpackagemanagerdownloadplatformrelease-and-resourcesdownloadresourcedownload-functions-change-signature-and-behaviour" title="Permanent link">&para;</a></h3>
+<p>The following functions:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">DownloadToolRelease</span><span class="p">(</span><span class="nx">tool</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">ToolRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Downloader</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">DownloadPlatformRelease</span><span class="p">(</span><span class="nx">platform</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">PlatformRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Downloader</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">DownloadResource</span><span class="p">)</span><span class="w"> </span><span class="nx">Download</span><span class="p">(</span><span class="nx">downloadDir</span><span class="w"> </span><span class="o">*</span><span class="nx">paths</span><span class="p">.</span><span class="nx">Path</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Downloader</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>now requires a label and a progress callback parameter, do not return the <code>Downloader</code> object anymore, and they
+automatically handles the download internally:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">DownloadToolRelease</span><span class="p">(</span><span class="nx">tool</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">ToolRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">progressCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">DownloadPlatformRelease</span><span class="p">(</span><span class="nx">platform</span><span class="w"> </span><span class="o">*</span><span class="nx">cores</span><span class="p">.</span><span class="nx">PlatformRelease</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">progressCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">DownloadResource</span><span class="p">)</span><span class="w"> </span><span class="nx">Download</span><span class="p">(</span><span class="nx">downloadDir</span><span class="w"> </span><span class="o">*</span><span class="nx">paths</span><span class="p">.</span><span class="nx">Path</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">downloadCB</span><span class="w"> </span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgressCB</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"></span>
+</code></pre></div>
+<p>The new progress parameters must be added to legacy code, if progress reports are not needed an empty stub for <code>label</code>
+and <code>progressCB</code> must be provided. There is no more need to execute the <code>downloader.Run()</code> or
+<code>downloader.RunAndPoll(...)</code> method.</p>
+<p>For example, the old legacy code like:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">downloader</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">DownloadPlatformRelease</span><span class="p">(</span><span class="nx">platformToDownload</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="p">)</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Run</span><span class="p">();</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="o">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>may be ported to the new version as:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">pm</span><span class="p">.</span><span class="nx">DownloadPlatformRelease</span><span class="p">(</span><span class="nx">platformToDownload</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">progress</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">DownloadProgress</span><span class="p">)</span><span class="w"> </span><span class="p">{})</span><span class="w"></span>
+</code></pre></div>
+<h3 id="packagemanagerload-functions-now-returns-error-instead-of-statusstatus"><code>packagemanager.Load*</code> functions now returns <code>error</code> instead of <code>*status.Status</code><a class="headerlink" href="#packagemanagerload-functions-now-returns-error-instead-of-statusstatus" title="Permanent link">&para;</a></h3>
+<p>The following functions signature:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">LoadHardware</span><span class="p">()</span><span class="w"> </span><span class="p">[]</span><span class="o">*</span><span class="nx">status</span><span class="p">.</span><span class="nx">Status</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">LoadHardwareFromDirectories</span><span class="p">(</span><span class="nx">hardwarePaths</span><span class="w"> </span><span class="nx">paths</span><span class="p">.</span><span class="nx">PathList</span><span class="p">)</span><span class="w"> </span><span class="p">[]</span><span class="o">*</span><span class="nx">status</span><span class="p">.</span><span class="nx">Status</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">LoadHardwareFromDirectory</span><span class="p">(</span><span class="nx">path</span><span class="w"> </span><span class="o">*</span><span class="nx">paths</span><span class="p">.</span><span class="nx">Path</span><span class="p">)</span><span class="w"> </span><span class="p">[]</span><span class="o">*</span><span class="nx">status</span><span class="p">.</span><span class="nx">Status</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">LoadToolsFromBundleDirectories</span><span class="p">(</span><span class="nx">dirs</span><span class="w"> </span><span class="nx">paths</span><span class="p">.</span><span class="nx">PathList</span><span class="p">)</span><span class="w"> </span><span class="p">[]</span><span class="o">*</span><span class="nx">status</span><span class="p">.</span><span class="nx">Status</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">LoadDiscoveries</span><span class="p">()</span><span class="w"> </span><span class="p">[]</span><span class="o">*</span><span class="nx">status</span><span class="p">.</span><span class="nx">Status</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>have been changed to:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">LoadHardware</span><span class="p">()</span><span class="w"> </span><span class="p">[]</span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">LoadHardwareFromDirectories</span><span class="p">(</span><span class="nx">hardwarePaths</span><span class="w"> </span><span class="nx">paths</span><span class="p">.</span><span class="nx">PathList</span><span class="p">)</span><span class="w"> </span><span class="p">[]</span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">LoadHardwareFromDirectory</span><span class="p">(</span><span class="nx">path</span><span class="w"> </span><span class="o">*</span><span class="nx">paths</span><span class="p">.</span><span class="nx">Path</span><span class="p">)</span><span class="w"> </span><span class="p">[]</span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">LoadToolsFromBundleDirectories</span><span class="p">(</span><span class="nx">dirs</span><span class="w"> </span><span class="nx">paths</span><span class="p">.</span><span class="nx">PathList</span><span class="p">)</span><span class="w"> </span><span class="p">[]</span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">pm</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="p">)</span><span class="w"> </span><span class="nx">LoadDiscoveries</span><span class="p">()</span><span class="w"> </span><span class="p">[]</span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>These function no longer returns a gRPC status, so the errors can be handled as any other <code>error</code>.</p>
 <h3 id="removed-error-return-from-discoverynew-function">Removed <code>error</code> return from <code>discovery.New(...)</code> function<a class="headerlink" href="#removed-error-return-from-discoverynew-function" title="Permanent link">&para;</a></h3>
 <p>The <code>discovery.New(...)</code> function never fails, so the error has been removed, the old signature:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="nx">New</span><span class="p">(</span><span class="nx">id</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">args</span> <span class="o">...</span><span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="o">*</span><span class="nx">PluggableDiscovery</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">New</span><span class="p">(</span><span class="nx">id</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">args</span><span class="w"> </span><span class="o">...</span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="nx">PluggableDiscovery</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>is now:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="nx">New</span><span class="p">(</span><span class="nx">id</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">args</span> <span class="o">...</span><span class="kt">string</span><span class="p">)</span> <span class="o">*</span><span class="nx">PluggableDiscovery</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">New</span><span class="p">(</span><span class="nx">id</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">args</span><span class="w"> </span><span class="o">...</span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="nx">PluggableDiscovery</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h2 id="0210">0.21.0<a class="headerlink" href="#0210" title="Permanent link">&para;</a></h2>
 <h3 id="packagemanagernewpackagemanager-function-change"><code>packagemanager.NewPackageManager</code> function change<a class="headerlink" href="#packagemanagernewpackagemanager-function-change" title="Permanent link">&para;</a></h3>
 <p>A new argument <code>userAgent</code> has been added to <code>packagemanager.NewPackageManager</code>, the new function signature is:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="nx">NewPackageManager</span><span class="p">(</span><span class="nx">indexDir</span><span class="p">,</span> <span class="nx">packagesDir</span><span class="p">,</span> <span class="nx">downloadDir</span><span class="p">,</span> <span class="nx">tempDir</span> <span class="o">*</span><span class="nx">paths</span><span class="p">.</span><span class="nx">Path</span><span class="p">,</span> <span class="nx">userAgent</span> <span class="kt">string</span><span class="p">)</span> <span class="o">*</span><span class="nx">PackageManager</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">NewPackageManager</span><span class="p">(</span><span class="nx">indexDir</span><span class="p">,</span><span class="w"> </span><span class="nx">packagesDir</span><span class="p">,</span><span class="w"> </span><span class="nx">downloadDir</span><span class="p">,</span><span class="w"> </span><span class="nx">tempDir</span><span class="w"> </span><span class="o">*</span><span class="nx">paths</span><span class="p">.</span><span class="nx">Path</span><span class="p">,</span><span class="w"> </span><span class="nx">userAgent</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="nx">PackageManager</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 </code></pre></div>
 <p>The userAgent string must be in the format <code>"ProgramName/Version"</code>, for example <code>"arduino-cli/0.20.1"</code>.</p>
 <h3 id="commandscreate-function-change"><code>commands.Create</code> function change<a class="headerlink" href="#commandscreate-function-change" title="Permanent link">&para;</a></h3>
 <p>A new argument <code>extraUserAgent</code> has been added to <code>commands.Create</code>, the new function signature is:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="nx">Create</span><span class="p">(</span><span class="nx">req</span> <span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">CreateRequest</span><span class="p">,</span> <span class="nx">extraUserAgent</span> <span class="o">...</span><span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">CreateResponse</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">Create</span><span class="p">(</span><span class="nx">req</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">CreateRequest</span><span class="p">,</span><span class="w"> </span><span class="nx">extraUserAgent</span><span class="w"> </span><span class="o">...</span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">CreateResponse</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 </code></pre></div>
 <p><code>extraUserAgent</code> is an array of strings, so multiple user agent may be provided. Each user agent must be in the format
 <code>"ProgramName/Version"</code>, for example <code>"arduino-cli/0.20.1"</code>.</p>
 <h3 id="commandscompile-function-change"><code>commands.Compile</code> function change<a class="headerlink" href="#commandscompile-function-change" title="Permanent link">&para;</a></h3>
 <p>A new argument <code>progressCB</code> has been added to <code>commands.Compile</code>, the new function signature is:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="nx">Compile</span><span class="p">(</span>
-    <span class="nx">ctx</span> <span class="nx">context</span><span class="p">.</span><span class="nx">Context</span><span class="p">,</span>
-    <span class="nx">req</span> <span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">CompileRequest</span><span class="p">,</span>
-    <span class="nx">outStream</span><span class="p">,</span> <span class="nx">errStream</span> <span class="nx">io</span><span class="p">.</span><span class="nx">Writer</span><span class="p">,</span>
-    <span class="nx">progressCB</span> <span class="nx">commands</span><span class="p">.</span><span class="nx">TaskProgressCB</span><span class="p">,</span>
-    <span class="nx">debug</span> <span class="kt">bool</span>
-<span class="p">)</span> <span class="p">(</span><span class="nx">r</span> <span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">CompileResponse</span><span class="p">,</span> <span class="nx">e</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">Compile</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="nx">ctx</span><span class="w"> </span><span class="nx">context</span><span class="p">.</span><span class="nx">Context</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">req</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">CompileRequest</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">outStream</span><span class="p">,</span><span class="w"> </span><span class="nx">errStream</span><span class="w"> </span><span class="nx">io</span><span class="p">.</span><span class="nx">Writer</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">progressCB</span><span class="w"> </span><span class="nx">commands</span><span class="p">.</span><span class="nx">TaskProgressCB</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">debug</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nx">r</span><span class="w"> </span><span class="o">*</span><span class="nx">rpc</span><span class="p">.</span><span class="nx">CompileResponse</span><span class="p">,</span><span class="w"> </span><span class="nx">e</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 </code></pre></div>
 <p>if a callback function is provided the <code>Compile</code> command will call it periodically with progress reports with the
 percentage of compilation completed, otherwise, if the parameter is <code>nil</code>, no progress reports will be performed.</p>
@@ -2117,17 +2943,17 @@ the wrong casing.</p>
 <h3 id="githubcomarduinoarduino-cliexecutilsnewprocess-and-executilsnewprocessfrompath-function-change"><code>github.com/arduino/arduino-cli/executils.NewProcess</code> and <code>executils.NewProcessFromPath</code> function change<a class="headerlink" href="#githubcomarduinoarduino-cliexecutilsnewprocess-and-executilsnewprocessfrompath-function-change" title="Permanent link">&para;</a></h3>
 <p>A new argument <code>extraEnv</code> has been added to <code>executils.NewProcess</code> and <code>executils.NewProcessFromPath</code>, the new function
 signature is:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="nx">NewProcess</span><span class="p">(</span><span class="nx">extraEnv</span> <span class="p">[]</span><span class="kt">string</span><span class="p">,</span> <span class="nx">args</span> <span class="o">...</span><span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="o">*</span><span class="nx">Process</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">NewProcess</span><span class="p">(</span><span class="nx">extraEnv</span><span class="w"> </span><span class="p">[]</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">args</span><span class="w"> </span><span class="o">...</span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="nx">Process</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="nx">NewProcessFromPath</span><span class="p">(</span><span class="nx">extraEnv</span> <span class="p">[]</span><span class="kt">string</span><span class="p">,</span> <span class="nx">executable</span> <span class="o">*</span><span class="nx">paths</span><span class="p">.</span><span class="nx">Path</span><span class="p">,</span> <span class="nx">args</span> <span class="o">...</span><span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="o">*</span><span class="nx">Process</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">NewProcessFromPath</span><span class="p">(</span><span class="nx">extraEnv</span><span class="w"> </span><span class="p">[]</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">executable</span><span class="w"> </span><span class="o">*</span><span class="nx">paths</span><span class="p">.</span><span class="nx">Path</span><span class="p">,</span><span class="w"> </span><span class="nx">args</span><span class="w"> </span><span class="o">...</span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="nx">Process</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 </code></pre></div>
 <p>The <code>extraEnv</code> params allow to pass environment variables (in addition to the default ones) to the spawned process.</p>
 <h3 id="githubcomarduinoarduino-clii18ninit-now-requires-an-empty-string-to-be-passed-for-autodetection-of-locale"><code>github.com/arduino/arduino-cli/i18n.Init(...)</code> now requires an empty string to be passed for autodetection of locale<a class="headerlink" href="#githubcomarduinoarduino-clii18ninit-now-requires-an-empty-string-to-be-passed-for-autodetection-of-locale" title="Permanent link">&para;</a></h3>
 <p>For automated detection of locale, change the call from:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">i18n</span><span class="p">.</span><span class="nx">Init</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="nx">i18n</span><span class="p">.</span><span class="nx">Init</span><span class="p">()</span><span class="w"></span>
 </code></pre></div>
 <p>to</p>
-<div class="highlight"><pre><span></span><code><span class="nx">i18n</span><span class="p">.</span><span class="nx">Init</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">i18n</span><span class="p">.</span><span class="nx">Init</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <h3 id="githubcomarduinoarduino-clilegacyi18n-module-has-been-removed-in-particular-the-i18nlogger"><code>github.com/arduino/arduino-cli/legacy/i18n</code> module has been removed (in particular the <code>i18n.Logger</code>)<a class="headerlink" href="#githubcomarduinoarduino-clilegacyi18n-module-has-been-removed-in-particular-the-i18nlogger" title="Permanent link">&para;</a></h3>
 <p>The <code>i18n.Logger</code> is no longer available. It was mainly used in the legacy builder struct field <code>Context.Logger</code>.</p>
@@ -2243,10 +3069,10 @@ requesting connected board lists, now that information is stored in the <code>po
 <h4 id="githubcomarduinoarduino-clii18n-package"><code>github.com/arduino/arduino-cli/i18n</code> package<a class="headerlink" href="#githubcomarduinoarduino-clii18n-package" title="Permanent link">&para;</a></h4>
 <p>The behavior of the <code>Init</code> function has changed. The user specified locale code is no longer read from the
 <code>github.com/arduino/arduino-cli/configuration</code> package and now must be passed directly to <code>Init</code> as a string:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">i18n</span><span class="p">.</span><span class="nx">Init</span><span class="p">(</span><span class="s">&quot;it&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nx">i18n</span><span class="p">.</span><span class="nx">Init</span><span class="p">(</span><span class="s">&quot;it&quot;</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Omit the argument for automated locale detection:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">i18n</span><span class="p">.</span><span class="nx">Init</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="nx">i18n</span><span class="p">.</span><span class="nx">Init</span><span class="p">()</span><span class="w"></span>
 </code></pre></div>
 <h4 id="githubcomarduinoarduino-cliarduinobuilder-package"><code>github.com/arduino/arduino-cli/arduino/builder</code> package<a class="headerlink" href="#githubcomarduinoarduino-cliarduinobuilder-package" title="Permanent link">&para;</a></h4>
 <p><code>GenBuildPath()</code> function has been moved to <code>github.com/arduino/arduino-cli/arduino/sketch</code> package. The signature is
@@ -2257,15 +3083,15 @@ unchanged.</p>
 <code>path *paths.Path, contents []byte, destPath *paths.Path</code>. <code>paths</code> is <code>github.com/arduino/go-paths-helper</code>.</p>
 <p><code>SketchLoad</code> function has been removed, in its place use <code>New</code> from <code>github.com/arduino/arduino-cli/arduino/sketch</code>
 package.</p>
-<div class="highlight"><pre><span></span><code><span class="gd">-      SketchLoad(&quot;/some/path&quot;, &quot;&quot;)</span>
-<span class="gi">+      sketch.New(paths.New(&quot;some/path))</span>
-}
+<div class="highlight"><pre><span></span><code><span class="gd">-      SketchLoad(&quot;/some/path&quot;, &quot;&quot;)</span><span class="w"></span>
+<span class="gi">+      sketch.New(paths.New(&quot;some/path))</span><span class="w"></span>
+<span class="w">}</span>
 </code></pre></div>
 <p>If you need to set a custom build path you must instead set it after creating the Sketch.</p>
-<div class="highlight"><pre><span></span><code><span class="gd">-      SketchLoad(&quot;/some/path&quot;, &quot;/my/build/path&quot;)</span>
-<span class="gi">+      s, err := sketch.New(paths.New(&quot;some/path))</span>
-<span class="gi">+      s.BuildPath = paths.new(&quot;/my/build/path&quot;)</span>
-}
+<div class="highlight"><pre><span></span><code><span class="gd">-      SketchLoad(&quot;/some/path&quot;, &quot;/my/build/path&quot;)</span><span class="w"></span>
+<span class="gi">+      s, err := sketch.New(paths.New(&quot;some/path))</span><span class="w"></span>
+<span class="gi">+      s.BuildPath = paths.new(&quot;/my/build/path&quot;)</span><span class="w"></span>
+<span class="w">}</span>
 </code></pre></div>
 <p><code>SketchCopyAdditionalFiles</code> function signature is changed from
 <code>sketch *sketch.Sketch, destPath string, overrides map[string]string</code> to
@@ -2275,10 +3101,10 @@ package.</p>
 <p><code>NewItem</code> has been removed too, use <code>go-paths-helper.New</code> in its place.</p>
 <p><code>GetSourceBytes</code> has been removed, in its place use <code>go-paths-helper.Path.ReadFile</code>. <code>GetSourceStr</code> too has been
 removed, in its place:</p>
-<div class="highlight"><pre><span></span><code><span class="gd">-      s, err := item.GetSourceStr()</span>
-<span class="gi">+      data, err := file.ReadFile()</span>
-<span class="gi">+      s := string(data)</span>
-}
+<div class="highlight"><pre><span></span><code><span class="gd">-      s, err := item.GetSourceStr()</span><span class="w"></span>
+<span class="gi">+      data, err := file.ReadFile()</span><span class="w"></span>
+<span class="gi">+      s := string(data)</span><span class="w"></span>
+<span class="w">}</span>
 </code></pre></div>
 <p><code>ItemByPath</code> type and its member functions have been removed, use <code>go-paths-helper.PathList</code> in its place.</p>
 <p><code>Sketch.LocationPath</code> has been renamed to <code>FullPath</code> and its type changed from <code>string</code> to <code>go-paths-helper.Path</code>.</p>
@@ -2420,51 +3246,51 @@ loaded.</p>
 been modified so that each response is either an error or a notification on the initialization process so that it works
 more like an actual stream of information.</p>
 <p>Previously a client would call the function like so:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">initReq</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">InitRequest</span><span class="p">()</span>
-<span class="nx">initReq</span><span class="p">.</span><span class="nx">setLibraryManagerOnly</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">initResp</span> <span class="o">=</span> <span class="k">await</span> <span class="ow">new</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">InitResponse</span><span class="o">&gt;</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kd">let</span> <span class="nx">resp</span>: <span class="kt">InitResponse</span> <span class="o">|</span> <span class="kc">undefined</span> <span class="o">=</span> <span class="kc">undefined</span>
-  <span class="kd">const</span> <span class="nx">stream</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="nx">initReq</span><span class="p">)</span>
-  <span class="nx">stream</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="p">(</span><span class="nx">data</span>: <span class="kt">InitResponse</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">(</span><span class="nx">resp</span> <span class="o">=</span> <span class="nx">data</span><span class="p">))</span>
-  <span class="nx">stream</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">resp</span><span class="o">!</span><span class="p">))</span>
-  <span class="nx">stream</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">reject</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span>
-<span class="p">})</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">initReq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">InitRequest</span><span class="p">()</span><span class="w"></span>
+<span class="nx">initReq</span><span class="p">.</span><span class="nx">setLibraryManagerOnly</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">initResp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">InitResponse</span><span class="o">&gt;</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">reject</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">resp</span><span class="o">:</span><span class="w"> </span><span class="kt">InitResponse</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">undefined</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">undefined</span><span class="w"></span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">stream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="nx">initReq</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="nx">stream</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">InitResponse</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="nx">resp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">data</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="nx">stream</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">resolve</span><span class="p">(</span><span class="nx">resp</span><span class="o">!</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="nx">stream</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">reject</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
 
-<span class="kd">const</span> <span class="nx">instance</span> <span class="o">=</span> <span class="nx">initResp</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">()</span>
-<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">instance</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">throw</span> <span class="ow">new</span> <span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;Could not retrieve instance from the initialize response.&quot;</span><span class="p">)</span>
-<span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">initResp</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">()</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">instance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;Could not retrieve instance from the initialize response.&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>Now something similar should be done.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">createReq</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">CreateRequest</span><span class="p">()</span>
-<span class="kd">const</span> <span class="nx">instance</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">createReq</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">createReq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">CreateRequest</span><span class="p">()</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">createReq</span><span class="p">)</span><span class="w"></span>
 
-<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">instance</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">throw</span> <span class="ow">new</span> <span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;Could not retrieve instance from the initialize response.&quot;</span><span class="p">)</span>
-<span class="p">}</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">instance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;Could not retrieve instance from the initialize response.&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kd">const</span> <span class="nx">initReq</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">InitRequest</span><span class="p">()</span>
-<span class="nx">initReq</span><span class="p">.</span><span class="nx">setInstance</span><span class="p">(</span><span class="nx">instance</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">initResp</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="nx">initReq</span><span class="p">)</span>
-<span class="nx">initResp</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="p">(</span><span class="nx">o</span>: <span class="kt">InitResponse</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="kd">const</span> <span class="nx">downloadProgress</span> <span class="o">=</span> <span class="nx">o</span><span class="p">.</span><span class="nx">getDownloadProgress</span><span class="p">()</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">downloadProgress</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// Handle download progress</span>
-  <span class="p">}</span>
-  <span class="kd">const</span> <span class="nx">taskProgress</span> <span class="o">=</span> <span class="nx">o</span><span class="p">.</span><span class="nx">getTaskProgress</span><span class="p">()</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">taskProgress</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// Handle task progress</span>
-  <span class="p">}</span>
-  <span class="kd">const</span> <span class="nx">err</span> <span class="o">=</span> <span class="nx">o</span><span class="p">.</span><span class="nx">getError</span><span class="p">()</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// Handle error</span>
-  <span class="p">}</span>
-<span class="p">})</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">initReq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">InitRequest</span><span class="p">()</span><span class="w"></span>
+<span class="nx">initReq</span><span class="p">.</span><span class="nx">setInstance</span><span class="p">(</span><span class="nx">instance</span><span class="p">)</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">initResp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="nx">initReq</span><span class="p">)</span><span class="w"></span>
+<span class="nx">initResp</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">o</span><span class="o">:</span><span class="w"> </span><span class="kt">InitResponse</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">downloadProgress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">o</span><span class="p">.</span><span class="nx">getDownloadProgress</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">downloadProgress</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Handle download progress</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">taskProgress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">o</span><span class="p">.</span><span class="nx">getTaskProgress</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">taskProgress</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Handle task progress</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">o</span><span class="p">.</span><span class="nx">getError</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Handle error</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
 
-<span class="k">await</span> <span class="ow">new</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">initResp</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">reject</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span>
-  <span class="nx">initResp</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,</span> <span class="nx">resolve</span><span class="p">)</span>
-<span class="p">})</span>
+<span class="k">await</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">reject</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nx">initResp</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">reject</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="nx">initResp</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">resolve</span><span class="p">)</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
 </code></pre></div>
 <p>Previously if even one platform or library failed to load everything else would fail too, that doesn't happen anymore.
 Now it's easier for both the CLI and the gRPC clients to handle gracefully platforms or libraries updates that might
@@ -2478,7 +3304,7 @@ break the initialization step and make everything unusable.</p>
 <code>Init</code> function.</p>
 <h3 id="removed-rarely-used-golang-api">Removed rarely used golang API<a class="headerlink" href="#removed-rarely-used-golang-api" title="Permanent link">&para;</a></h3>
 <p>The following function from the <code>github.com/arduino/arduino-cli/arduino/libraries</code> module is no longer available:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="p">(</span><span class="nx">lm</span> <span class="o">*</span><span class="nx">LibrariesManager</span><span class="p">)</span> <span class="nx">UpdateIndex</span><span class="p">(</span><span class="nx">config</span> <span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">)</span> <span class="p">(</span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Downloader</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">lm</span><span class="w"> </span><span class="o">*</span><span class="nx">LibrariesManager</span><span class="p">)</span><span class="w"> </span><span class="nx">UpdateIndex</span><span class="p">(</span><span class="nx">config</span><span class="w"> </span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Config</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="nx">downloader</span><span class="p">.</span><span class="nx">Downloader</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 </code></pre></div>
 <p>We recommend using the equivalent gRPC API to perform the update of the index.</p>
 <h2 id="0180">0.18.0<a class="headerlink" href="#0180" title="Permanent link">&para;</a></h2>
@@ -3017,7 +3843,7 @@ previous behaviour the user must set the <code>--overwrite</code> flag.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
