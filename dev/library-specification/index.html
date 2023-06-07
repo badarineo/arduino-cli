@@ -2200,9 +2200,9 @@ be in the Arduino Language Reference.</p>
 <p>Normally the Arduino IDE treats the contents of the library folder as read-only. This is to prevent users from
 accidentally modifying example sketches. During the library development process you may want to edit example sketches in
 place using the Arduino IDE. With Arduino IDE 1.6.6 and newer, the read-only behavior can be disabled by adding a file
-named .development to the root of the library folder. A <a href="#libraryproperties-file-format">library.properties</a> file must
+named <code>.development</code> to the root of the library folder. A <a href="#libraryproperties-file-format">library.properties</a> file must
 also be present. The <a href="https://github.com/arduino/library-registry/blob/main/FAQ.md#readme">Library Manager indexer</a> will
-not pick up releases that contain a .development file so be sure not to push this file to your remote repository.</p>
+not pick up releases that contain a <code>.development</code> file so be sure not to push this file to your remote repository.</p>
 <h3 id="a-complete-example">A complete example<a class="headerlink" href="#a-complete-example" title="Permanent link">&para;</a></h3>
 <p>A hypothetical library named "Servo" that adheres to the specification follows:</p>
 <div class="highlight"><pre><span></span><code>Servo/
@@ -2245,10 +2245,10 @@ allowing the compilation to fail in a difficult to understand way):</p>
 <span class="cp">#endif</span>
 </code></pre></div>
 <h2 id="old-library-format-pre-15">Old library format (pre-1.5)<a class="headerlink" href="#old-library-format-pre-15" title="Permanent link">&para;</a></h2>
-<p>In order to support old libraries (from Arduino IDE 1.0.x), the Arduino IDE/Pro IDE and Arduino CLI will also compile
-libraries missing a library.properties metadata file. As a result, these libraries should behave as they did in Arduino
-IDE 1.0.x, although they will be available for all boards, including non-AVR ones (which wouldn’t have been present in
-Arduino IDE 1.0.x).</p>
+<p>In order to support old libraries (from Arduino IDE 1.0.x), Arduino IDE and Arduino CLI will also compile libraries
+missing a library.properties metadata file (the header file is still required). As a result, these libraries should
+behave as they did in Arduino IDE 1.0.x, although they will be available for all boards, including non-AVR ones (which
+wouldn’t have been present in Arduino IDE 1.0.x).</p>
                 
               
               
