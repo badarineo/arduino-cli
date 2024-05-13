@@ -1138,34 +1138,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../rpc/settings/" class="md-nav__link">
-        settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../rpc/debug/" class="md-nav__link">
-        debug
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -1370,6 +1342,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../versioning/" class="md-nav__link">
+        Backward compatibility policy
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1486,6 +1473,7 @@
   -e, --export-binaries                       If set built binaries will be exported to the sketch folder.
   -b, --fqbn string                           Fully Qualified Board Name, e.g.: arduino:avr:uno
   -h, --help                                  help for compile
+  -j, --jobs int32                            Max number of parallel compiles. If set to 0 the number of available CPUs cores will be used.
       --keys-keychain string                  The path of the dir to search for the custom keys to sign and encrypt a binary. Used only by the platforms that support it.
       --libraries strings                     Path to a collection of libraries. Can be used multiple times or entries can be comma separated.
       --library strings                       Path to a single library’s root folder. Can be used multiple times or entries can be comma separated.
@@ -1501,22 +1489,23 @@
       --show-properties string[=&quot;expanded&quot;]   Show build properties. The properties are expanded, use &quot;--show-properties=unexpanded&quot; if you want them exactly as they are defined. (default &quot;disabled&quot;)
       --sign-key string                       The name of the custom signing key to use to sign a binary during the compile process. Used only by the platforms that support it.
   -u, --upload                                Upload the binary after the compilation.
+  -v, --verbose                               Optional, turns on verbose mode.
   -t, --verify                                Verify uploaded binary after the upload.
       --warnings string                       Optional, can be: none, default, more, all. Used to tell gcc which warning level to use (-W flag). (default &quot;none&quot;)
 </code></pre></div>
 <h3 id="options-inherited-from-parent-commands">Options inherited from parent commands<a class="headerlink" href="#options-inherited-from-parent-commands" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>      --additional-urls strings   Comma-separated list of additional URLs for the Boards Manager.
       --config-file string        The custom config file (if not specified the default will be used).
-      --format string             The output format for the logs, can be: text, json, jsonmini, yaml (default &quot;text&quot;)
+      --json                      Print the output in JSON format.
+      --log                       Print the logs on the standard output.
       --log-file string           Path to the file where logs will be written.
       --log-format string         The output format for the logs, can be: text, json
       --log-level string          Messages with this level and above will be logged. Valid levels are: trace, debug, info, warn, error, fatal, panic
       --no-color                  Disable colored output.
-  -v, --verbose                   Print the logs on the standard output.
 </code></pre></div>
 <h3 id="see-also">SEE ALSO<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="../arduino-cli/">arduino-cli</a> - Arduino CLI.</li>
+<li><a href="../arduino-cli/">arduino-cli</a>  - Arduino CLI.</li>
 </ul>
                 
               

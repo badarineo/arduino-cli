@@ -1138,34 +1138,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../rpc/settings/" class="md-nav__link">
-        settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../rpc/debug/" class="md-nav__link">
-        debug
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -1370,6 +1342,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../versioning/" class="md-nav__link">
+        Backward compatibility policy
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1465,8 +1452,7 @@
                 <h2 id="arduino-cli-cache-clean">arduino-cli cache clean<a class="headerlink" href="#arduino-cli-cache-clean" title="Permanent link">&para;</a></h2>
 <p>Delete Boards/Library Manager download cache.</p>
 <h3 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">&para;</a></h3>
-<p>Delete contents of the <code>directories.downloads</code> folder, where archive files are staged during installation of libraries
-and boards platforms.</p>
+<p>Delete contents of the <code>directories.downloads</code> folder, where archive files are staged during installation of libraries and boards platforms.</p>
 <div class="highlight"><pre><span></span><code>arduino-cli cache clean [flags]
 </code></pre></div>
 <h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
@@ -1478,16 +1464,16 @@ and boards platforms.</p>
 <h3 id="options-inherited-from-parent-commands">Options inherited from parent commands<a class="headerlink" href="#options-inherited-from-parent-commands" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>      --additional-urls strings   Comma-separated list of additional URLs for the Boards Manager.
       --config-file string        The custom config file (if not specified the default will be used).
-      --format string             The output format for the logs, can be: text, json, jsonmini, yaml (default &quot;text&quot;)
+      --json                      Print the output in JSON format.
+      --log                       Print the logs on the standard output.
       --log-file string           Path to the file where logs will be written.
       --log-format string         The output format for the logs, can be: text, json
       --log-level string          Messages with this level and above will be logged. Valid levels are: trace, debug, info, warn, error, fatal, panic
       --no-color                  Disable colored output.
-  -v, --verbose                   Print the logs on the standard output.
 </code></pre></div>
 <h3 id="see-also">SEE ALSO<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="../arduino-cli_cache/">arduino-cli cache</a> - Arduino cache commands.</li>
+<li><a href="../arduino-cli_cache/">arduino-cli cache</a>  - Arduino cache commands.</li>
 </ul>
                 
               

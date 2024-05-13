@@ -1057,34 +1057,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../rpc/settings/" class="md-nav__link">
-        settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../rpc/debug/" class="md-nav__link">
-        debug
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -1428,6 +1400,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../versioning/" class="md-nav__link">
+        Backward compatibility policy
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1598,8 +1585,6 @@
 <li><code>builtin.libraries</code> - the libraries in this directory will be available to all platforms without the need for the
   user to install them, but with the lowest priority over other installed libraries with the same name, it's the
   equivalent of the Arduino IDE's bundled libraries directory.</li>
-<li><code>builtin.tools</code> - it's a list of directories of tools that will be available to all platforms without the need for
-  the user to install them, it's the equivalent of the Arduino IDE 1.x bundled tools directory.</li>
 </ul>
 </li>
 <li><code>library</code> - configuration options relating to Arduino libraries.<ul>
@@ -1622,6 +1607,11 @@
 <li><code>enabled</code> - controls the use of metrics.</li>
 </ul>
 </li>
+<li><code>output</code> - settings related to text output.<ul>
+<li><code>no_color</code> - ANSI color escape codes are added by default to the output. Set to <code>true</code> to disable colored text
+  output.</li>
+</ul>
+</li>
 <li><code>sketch</code> - configuration options relating to <a href="../sketch-specification/">Arduino sketches</a>.<ul>
 <li><code>always_export_binaries</code> - set to <code>true</code> to make <a href="../commands/arduino-cli_compile/"><code>arduino-cli compile</code></a> always save binaries
   to the sketch folder. This is the equivalent of using the <a href="../commands/arduino-cli_compile/#options"><code>--export-binaries</code></a> flag.</li>
@@ -1637,6 +1627,10 @@
 <li><code>ttl</code> - cache expiration time of build folders. If the cache is hit by a compilation the corresponding build files
   lifetime is renewed. The value format must be a valid input for
   <a href="https://pkg.go.dev/time#ParseDuration">time.ParseDuration()</a>, defaults to <code>720h</code> (30 days).</li>
+</ul>
+</li>
+<li><code>network</code> - configuration options related to the network connection.<ul>
+<li><code>proxy</code> - URL of the proxy server.</li>
 </ul>
 </li>
 </ul>
@@ -1655,7 +1649,7 @@ overwrites the ones below it.</p>
 <p>Arduino CLI's command line flags are documented in the command line help and the <a href="../commands/arduino-cli/">Arduino CLI command reference</a>.</p>
 <h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
 <p>Setting an additional Boards Manager URL using the <a href="../commands/arduino-cli_config/#options-inherited-from-parent-commands"><code>--additional-urls</code></a> command line flag:</p>
-<div class="highlight"><pre><span></span><code>$ arduino-cli core update-index --additional-urls https://downloads.arduino.cc/packages/package_staging_index.json
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>arduino-cli<span class="w"> </span>core<span class="w"> </span>update-index<span class="w"> </span>--additional-urls<span class="w"> </span>https://downloads.arduino.cc/packages/package_staging_index.json
 </code></pre></div>
 <h3 id="environment-variables">Environment variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h3>
 <p>All configuration options can be set via environment variables. The variable names start with <code>ARDUINO</code>, followed by the
@@ -1666,16 +1660,16 @@ can use the <a href="https://docs.microsoft.com/en-us/windows-server/administrat
 <p><code>ARDUINO_BOARD_MANAGER_ADDITIONAL_URLS</code> environment variables can be a list of space-separated URLs.</p>
 <h4 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h4>
 <p>Setting an additional Boards Manager URL using the <code>ARDUINO_BOARD_MANAGER_ADDITIONAL_URLS</code> environment variable:</p>
-<div class="highlight"><pre><span></span><code>$ <span class="nb">export</span> <span class="nv">ARDUINO_BOARD_MANAGER_ADDITIONAL_URLS</span><span class="o">=</span>https://downloads.arduino.cc/packages/package_staging_index.json
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">ARDUINO_BOARD_MANAGER_ADDITIONAL_URLS</span><span class="o">=</span>https://downloads.arduino.cc/packages/package_staging_index.json
 </code></pre></div>
 <p>Setting multiple additional Boards Manager URLs using the <code>ARDUINO_BOARD_MANAGER_ADDITIONAL_URLS</code> environment variable:</p>
-<div class="highlight"><pre><span></span><code>$ <span class="nb">export</span> <span class="nv">ARDUINO_BOARD_MANAGER_ADDITIONAL_URLS</span><span class="o">=</span><span class="s2">&quot;https://downloads.arduino.cc/packages/package_staging_index.json https://downloads.arduino.cc/packages/package_mbed_index.json&quot;</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">ARDUINO_BOARD_MANAGER_ADDITIONAL_URLS</span><span class="o">=</span><span class="s2">&quot;https://downloads.arduino.cc/packages/package_staging_index.json https://downloads.arduino.cc/packages/package_mbed_index.json&quot;</span>
 </code></pre></div>
 <h3 id="configuration-file">Configuration file<a class="headerlink" href="#configuration-file" title="Permanent link">&para;</a></h3>
 <p><a href="../commands/arduino-cli_config_init/"><code>arduino-cli config init</code></a> creates or updates a configuration file with the current
 configuration settings.</p>
 <p>This allows saving the options set by command line flags or environment variables. For example:</p>
-<div class="highlight"><pre><span></span><code>arduino-cli config init --additional-urls https://downloads.arduino.cc/packages/package_staging_index.json
+<div class="highlight"><pre><span></span><code>arduino-cli<span class="w"> </span>config<span class="w"> </span>init<span class="w"> </span>--additional-urls<span class="w"> </span>https://downloads.arduino.cc/packages/package_staging_index.json
 </code></pre></div>
 <h4 id="file-name">File name<a class="headerlink" href="#file-name" title="Permanent link">&para;</a></h4>
 <p>The configuration file must be named <code>arduino-cli</code>, with the appropriate file extension for the file's format.</p>
@@ -1694,22 +1688,23 @@ configuration settings.</p>
 <p>Configuration files in the following locations are recognized by Arduino CLI:</p>
 <ol>
 <li>Location specified by the <a href="../commands/arduino-cli/"><code>--config-file</code></a> command line flag</li>
+<li>Location specified by the <code>ARDUINO_CONFIG_FILE</code> environment variable</li>
 <li>Arduino CLI data directory (as configured by <code>directories.data</code>)</li>
 </ol>
 <p>If multiple configuration files are present, the one highest on the above list is used. Configuration files are not
 combined.</p>
 <p>The location of the active configuration file can be determined by running the command:</p>
-<div class="highlight"><pre><span></span><code>arduino-cli config dump --verbose
+<div class="highlight"><pre><span></span><code>arduino-cli<span class="w"> </span>config<span class="w"> </span>dump<span class="w"> </span>--verbose
 </code></pre></div>
 <h4 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h4>
 <p>Setting an additional Boards Manager URL using a YAML format configuration file:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">board_manager</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">additional_urls</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://downloads.arduino.cc/packages/package_staging_index.json</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">board_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">additional_urls</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://downloads.arduino.cc/packages/package_staging_index.json</span>
 </code></pre></div>
 <p>Doing the same using a TOML format file:</p>
-<div class="highlight"><pre><span></span><code><span class="k">[board_manager]</span><span class="w"></span>
-<span class="n">additional_urls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s">&quot;https://downloads.arduino.cc/packages/package_staging_index.json&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">[board_manager]</span>
+<span class="n">additional_urls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s">&quot;https://downloads.arduino.cc/packages/package_staging_index.json&quot;</span><span class="w"> </span><span class="p">]</span>
 </code></pre></div>
 <h4 id="json-schema">JSON schema<a class="headerlink" href="#json-schema" title="Permanent link">&para;</a></h4>
 <p>The configuration file <a href="../configuration.schema.json">JSON schema</a> can be used to independently validate the file content. This
@@ -1733,7 +1728,7 @@ schema should be considered unstable in this version.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../rpc/debug/" class="md-footer__link md-footer__link--prev" aria-label="Previous: debug" rel="prev">
+        <a href="../rpc/commands/" class="md-footer__link md-footer__link--prev" aria-label="Previous: commands" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1742,7 +1737,7 @@ schema should be considered unstable in this version.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              debug
+              commands
             </div>
           </div>
         </a>
