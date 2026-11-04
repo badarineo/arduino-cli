@@ -1213,6 +1213,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#platformlibrarydependency" class="md-nav__link">
+    PlatformLibraryDependency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#platformmetadata" class="md-nav__link">
     PlatformMetadata
   </a>
@@ -1257,6 +1264,13 @@
           <li class="md-nav__item">
   <a href="#profilelibraryreferencelocallibrary" class="md-nav__link">
     ProfileLibraryReference.LocalLibrary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileplatformreference" class="md-nav__link">
+    ProfilePlatformReference
   </a>
   
 </li>
@@ -3123,6 +3137,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#platformlibrarydependency" class="md-nav__link">
+    PlatformLibraryDependency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#platformmetadata" class="md-nav__link">
     PlatformMetadata
   </a>
@@ -3167,6 +3188,13 @@
           <li class="md-nav__item">
   <a href="#profilelibraryreferencelocallibrary" class="md-nav__link">
     ProfileLibraryReference.LocalLibrary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileplatformreference" class="md-nav__link">
+    ProfilePlatformReference
   </a>
   
 </li>
@@ -4712,6 +4740,7 @@
     - <a href="#cc.arduino.cli.commands.v1.MonitorPortConfiguration">MonitorPortConfiguration</a>
     - <a href="#cc.arduino.cli.commands.v1.MonitorPortSetting">MonitorPortSetting</a>
     - <a href="#cc.arduino.cli.commands.v1.Platform">Platform</a>
+    - <a href="#cc.arduino.cli.commands.v1.PlatformLibraryDependency">PlatformLibraryDependency</a>
     - <a href="#cc.arduino.cli.commands.v1.PlatformMetadata">PlatformMetadata</a>
     - <a href="#cc.arduino.cli.commands.v1.PlatformRelease">PlatformRelease</a>
     - <a href="#cc.arduino.cli.commands.v1.PlatformSummary">PlatformSummary</a>
@@ -4719,6 +4748,7 @@
     - <a href="#cc.arduino.cli.commands.v1.ProfileLibraryReference">ProfileLibraryReference</a>
     - <a href="#cc.arduino.cli.commands.v1.ProfileLibraryReference.IndexLibrary">ProfileLibraryReference.IndexLibrary</a>
     - <a href="#cc.arduino.cli.commands.v1.ProfileLibraryReference.LocalLibrary">ProfileLibraryReference.LocalLibrary</a>
+    - <a href="#cc.arduino.cli.commands.v1.ProfilePlatformReference">ProfilePlatformReference</a>
     - <a href="#cc.arduino.cli.commands.v1.Programmer">Programmer</a>
     - <a href="#cc.arduino.cli.commands.v1.Sketch">Sketch</a>
     - <a href="#cc.arduino.cli.commands.v1.SketchProfile">SketchProfile</a>
@@ -5244,6 +5274,34 @@ platform release.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="cc.arduino.cli.commands.v1.PlatformLibraryDependency"></a></p>
+<h3 id="platformlibrarydependency">PlatformLibraryDependency<a class="headerlink" href="#platformlibrarydependency" title="Permanent link">&para;</a></h3>
+<p>PlatformLibraryDependency is a library that a platform release declares
+as a dependency.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>Name of the library.</td>
+</tr>
+<tr>
+<td>version</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>Version of the library required by the platform release.</td>
+</tr>
+</tbody>
+</table>
 <p><a name="cc.arduino.cli.commands.v1.PlatformMetadata"></a></p>
 <h3 id="platformmetadata">PlatformMetadata<a class="headerlink" href="#platformmetadata" title="Permanent link">&para;</a></h3>
 <p>PlatformMetadata contains generic information about a platform (not
@@ -5368,6 +5426,12 @@ correlated to a specific release).</p>
 <td><a href="#bool">bool</a></td>
 <td></td>
 <td>True if the platform dependencies are available for the current OS/ARCH. This also means that the platform is installable.</td>
+</tr>
+<tr>
+<td>library_dependencies</td>
+<td><a href="#cc.arduino.cli.commands.v1.PlatformLibraryDependency">PlatformLibraryDependency</a></td>
+<td>repeated</td>
+<td>Libraries on which this platform depends.</td>
 </tr>
 </tbody>
 </table>
@@ -5512,6 +5576,38 @@ a platform and all its available releases.</p>
 <td><a href="#string">string</a></td>
 <td></td>
 <td>Absolute path to the library.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="cc.arduino.cli.commands.v1.ProfilePlatformReference"></a></p>
+<h3 id="profileplatformreference">ProfilePlatformReference<a class="headerlink" href="#profileplatformreference" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>Platform ID (e.g., <code>arduino:avr</code>).</td>
+</tr>
+<tr>
+<td>version</td>
+<td><a href="#string">string</a></td>
+<td>optional</td>
+<td>Version of the platform.</td>
+</tr>
+<tr>
+<td>index_url</td>
+<td><a href="#string">string</a></td>
+<td>optional</td>
+<td>3rd party platform URL.</td>
 </tr>
 </tbody>
 </table>
@@ -5680,6 +5776,18 @@ a platform and all its available releases.</p>
 <td><a href="#string">string</a></td>
 <td></td>
 <td>Default Protocol in this profile.</td>
+</tr>
+<tr>
+<td>platforms</td>
+<td><a href="#cc.arduino.cli.commands.v1.ProfilePlatformReference">ProfilePlatformReference</a></td>
+<td>repeated</td>
+<td>Platforms used by the profile.</td>
+</tr>
+<tr>
+<td>libraries</td>
+<td><a href="#cc.arduino.cli.commands.v1.ProfileLibraryReference">ProfileLibraryReference</a></td>
+<td>repeated</td>
+<td>Libraries used by the profile.</td>
 </tr>
 </tbody>
 </table>
@@ -8737,7 +8845,7 @@ because already at latest version.</p>
 <p>Configurations specific for the &#39;gcc&#39; toolchain.</p>
 <p><a name="cc.arduino.cli.commands.v1.DebugOpenOCDServerConfiguration"></a></p>
 <h3 id="debugopenocdserverconfiguration">DebugOpenOCDServerConfiguration<a class="headerlink" href="#debugopenocdserverconfiguration" title="Permanent link">&para;</a></h3>
-<p>Configuration specific for the &#39;openocd` server.</p>
+<p>Configuration specific for the &#39;openocd&#39; server.</p>
 <table>
 <thead>
 <tr>
@@ -10626,13 +10734,13 @@ Any missing field will be kept at the default value.</p>
 <td>reason</td>
 <td><a href="#cc.arduino.cli.commands.v1.FailedInstanceInitReason">FailedInstanceInitReason</a></td>
 <td></td>
-<td>specific cause of the error.</td>
+<td>The specific cause of the error.</td>
 </tr>
 <tr>
 <td>message</td>
 <td><a href="#string">string</a></td>
 <td></td>
-<td>explanation of the error.</td>
+<td>The long explanation of the error.</td>
 </tr>
 </tbody>
 </table>
